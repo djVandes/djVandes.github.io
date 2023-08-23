@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!-- ensures it works on mobile aswell as desktop-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DJ Vandesande Portfolio Website</title>
+
+        <!-- normalizes bugs between mobile vs desktop browsers-->
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <!-- icons/brands-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+        <!-- UPDATING FONTS
+            1. get the google api font link (currently sourcecode pro and source sans pro)
+            2. update primary and secondary fonts in style.css-->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        <!-- css link-->
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <header>
+            <div class = "logo">
+                <img src = "img/signature.jpg" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <!-- website sections -->
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#experience" class="nav__link">Work Experience</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                    <li class="nav__item"><a href="#art" class="nav__link">My Artworks</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- introduction with classes for styling and id for anchoring-->
+        <section class="intro" id="home">
+            <!-- double hyphen indicated modifier class-->
+            <h1 class="section__title section__title--intro">
+                Hello, I am <strong> DJ Vandesande</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">QU BaSC of Comp Eng</p>
+            <img src="img/headshot.jpg" alt="a picture of DJ Vandesande" class = "intro__img">
+        </section>
+
+
+        <!-- My services -->
+        <section class="work-experience" id="experiences">
+            <h2 class="section__title section__title--experiences">Work Experience</h2>
+            <div class="experiences">
+                <div class="experience">
+                <!-- / Service -->
+                    <h3>R&D @ Maintenance Drone Co.</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+                </div> <!-- / service -->
+
+                <div class="experience">
+                    <h3>Design Solutions Engineer @ QU</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div> <!-- / service -->
+
+                <div class="experience">
+                    <h3>Queen's Cerebral Language Innovation (QCLI) @ QU</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+
+            <a href = "#art" class = "btn">My Artworks</a>
+        </section>
+
+
+    <!-- About Me -->
+        <section class ="about-me" id = "about">
+            <h2 class="section__title section__title--about">Who I am</h2>
+            <p class = "section__subtitle section__subtitle--about">they/them</p>
+
+            <div class="about-me__body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <img src="img/about_me.jpg" alt="Garden Painting" class="about-me__img">
+        </section>
+
+    <!-- My Work -->
+        <section class = "artwork" id="art">
+            <h2 class="section__title">My Artworks</h2>
+            <p class = "section__subtitle"></p>
+
+            <div class = "portfolio">
+
+                <!-- Acrylics -->
+                <a href="#" class="portfolio__item">
+                    <img src="img/red.JPG" alt="Blindfold" class="portfolio__img">
+                </a>
+
+                <!-- Self portraits -->
+                <a href="#" class="portfolio__item">
+                    <img src="img/orange.JPG" alt="Self Portrait" class="portfolio__img">
+                </a>
+
+                <!-- Hyperrealism -->
+                <a href="portfolio-item.html" class="portfolio__item">
+                    <img src="img/blue.JPG" alt="Scuba Diver" class="portfolio__img">
+                </a>
+
+                <!-- Watercolour -->
+                <a href="#" class="portfolio__item">
+                    <img src="img/yellow.JPG" alt="City" class="portfolio__img">
+                </a>
+
+                <!-- Oils -->
+                <a href="#" class="portfolio__item">
+                    <img src="img/green.JPG" alt="Garden" class="portfolio__img">
+                </a>
+
+                <!-- Woodburning -->
+                <a href="#" class="portfolio__item">
+                    <img src="img/purple.JPG" alt="Astronaut" class="portfolio__img">
+                </a>
+                <!-- Sculpting -->
+                <a href="#" class="portfolio__item">
+                    <img src="img/blue.JPG" alt="Scuba Diver" class="portfolio__img">
+                </a>
+
+            </div>
+        </section>
+    <!-- Footer-->
+        <footer class="footer">
+            <a href="mailto:20djv2@queensu.ca" class="footer__link">20djv2@queensu.ca</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.instagram.com/leonardo.da.vandes/?hl=en">
+                        <i class="fab fa-brands fa-instagram fa-beat-fade"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/dj-vandesande/">
+                        <i class="fab fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github/20djv2.com">
+                        <i class="fab fa-brands fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+
+        <script src="js/index.js"></script>
+
+
+    </body>
+</html>
