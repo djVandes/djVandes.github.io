@@ -1,14 +1,14 @@
 # Portfolio Website
 
-## Featuring 
-* Work experience,
-* Self Description,
+## Features 
 * Art Portfolio (subspages for each item)
+* About Me
+* Work experience
+* Astronout icon cmon look at that astronaut icon
 
-## Add ons
-* reorder site
-* Fix drop-down
-* change colour scheme
-* recomment
 
-> Me and my fancy ass website
+## Future Add ons
+* carousel of photos
+* more pieces in portfolio subpages
+
+> Grant! Grant look I made a website
