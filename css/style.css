@@ -1,11 +1,12 @@
 *,
 *::before,
 *::after {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 /* Custom Properties, update these for your own design */
-
 :root {
     --ff-primary: 'Source Sans Pro', sans-serif;
     --ff-secondary: 'Source Code Pro', monospace;
@@ -14,15 +15,17 @@
     --fw-bold: 900;
 
     /*CHANGE COLOUR SELECTION HERE*/
-    --clr-light: #fff;
-    --clr-dark: #303030;
-    --clr-accent: #357eff;
+    --clr-light: #303030;
+    --clr-dark: #e0dbd8;
+    --clr-accent: #5379a6;
+    --clr-mid: #3c3e41;
+
 
     /*FONT SIZES*/
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
-    --fs-body: 1rem;
+    --fs-body: 2rem;
 
     /*BOX SHADOWS*/
     --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
@@ -66,7 +69,7 @@ strong { font-weight: var(--fw-bold) }
 
 
 :focus {
-    outline: 3px solid var(--clr-accent);
+    outline: 0px solid var(--clr-accent);
     outline-offset: 3px;
 }
 
@@ -80,11 +83,11 @@ strong { font-weight: var(--fw-bold) }
     color: var(--clr-dark);
     text-decoration: none;
     cursor: pointer;
-    font-size: .8rem;
+    font-size: 1.25rem;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 2.5px;
     font-weight: var(--fw-bold);
-    transition: transform 200ms ease-in-out;
+    transition: transform 300ms ease-in-out;
 }
 
 .btn:hover {
@@ -128,6 +131,8 @@ h3 { font-size: var(--fs-h3) }
     background: var(--clr-accent);
     padding: .25em 1em;
     font-family: var(--ff-secondary);
+    color: var(--clr-light);
+
     margin-bottom: 1em;
 }
 
@@ -143,17 +148,17 @@ h3 { font-size: var(--fs-h3) }
 header {
     display: flex;
     justify-content: space-between;
-    padding: 1em;
+    padding: 0em;
 }
 
 .logo {
-    max-width: 100px;
+    max-width: 200px;
 }
 
 .nav {
     position: fixed;
     background: var(--clr-dark);
-    color: var(--clr-light);
+    color: var(--clr-dark);
     top: 0;
     bottom: 0;
     left: 0;
@@ -161,7 +166,7 @@ header {
     z-index: 100;
 
     transform: translateX(100%);
-    transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
+    transition: transform 300ms cubic-bezier(.5, 0, .5, 1);
 }
 
 .nav__list {
@@ -176,7 +181,7 @@ header {
 }
 
 .nav__link {
-    color: inherit;
+    color: var(--clr-light);
     font-weight: var(--fw-bold);
     font-size: var(--fs-h2);
     text-decoration: none;
@@ -192,7 +197,7 @@ header {
     border: 0;
     cursor: pointer; /*change pointer when hovering over*/
     position: absolute;
-    right: 1em; /*hugs right while maintaining padding distance*/
+    right: 4em; /*hugs right while maintaining padding distance*/
     top: 1em;
     z-index: 1000;
 }
@@ -204,6 +209,7 @@ header {
 .nav-open .nav-toggle{
     position: fixed;
 }
+
 
 .nav-open .hamburger{
     transform: rotate(.625turn);
@@ -217,22 +223,19 @@ header {
     opacity: 0;
 }
 
-
-
-
 .hamburger {
     display: block;
-    position: relative; /*for pseudo elements*/
+    position: fixed; /*for pseudo elements*/
 }
 
 .hamburger,
 .hamburger::before,
 .hamburger::after {
     background: var(--clr-accent);
-    width: 2em;
-    height: 3px;
-    border-radius: 1em;
-    transition: transform 250ms ease-in-out;
+    width: 3em;
+    height: 4px;
+    border-radius: 10em;
+    transition: transform 400ms ease-in-out;
 }
 
 .hamburger::before, /*pseudo elements*/
@@ -245,8 +248,8 @@ header {
 }
 
 
-.hamburger::before { top: 6px; } /*icon setup*/
-.hamburger::after { bottom: 6px; }
+.hamburger::before { top: 8px; } /*icon setup*/
+.hamburger::after { bottom: 8px; }
 
 
 /*  Intro section  */
@@ -295,7 +298,7 @@ header {
 
 
 
-/*  My services section  */
+/*  work experience  */
 
 .work-experience {
 
@@ -303,7 +306,7 @@ header {
     background-color: var(--clr-dark);
     background-size: cover;
     /* background-blend-mode: multiply; */
-    color: var(--clr-light);
+    color: var(--clr-dark);
     text-align: center;
 }
 
@@ -316,8 +319,8 @@ header {
     content: '';
     display: block;
     width: 2em;
-    height: 1px;
-    margin: 0.5em auto 1em;
+    height: .5px;
+    margin: 0.5em auto 0.5em;
     background: var(--clr-light);
     opacity: 0.25;
 }
@@ -347,11 +350,11 @@ header {
 
 
 .about-me {
-    max-width: 1000px;
+    max-width: 1500px;
     margin: 0 auto;
 }
 
-@media (min-width: 500px){
+@media (min-width: 800px){
     .about-me {
         display: grid;
         grid-template-columns: 1fr 200px;
@@ -384,16 +387,18 @@ header {
     }
 }
 
-/* My Work */
+/* artworks */
 
-.my-work {
+.artwork {
     background-color: var(--clr-dark);
     color: var(--clr-light);
     text-align: center;
 }
 
 .portfolio {
+    padding-top: 1.5em;
     display: grid;
+    gap: 18px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
@@ -407,7 +412,6 @@ header {
          opacity 250ms linear;
 }
 
-
 .portfolio__item:focus {
     position: relative;
     z-index: 2;
@@ -415,9 +419,50 @@ header {
 
 .portfolio__img:hover,
 .portfolio__item:focus .portfolio__img {
-    transform: scale(1.2);
+    transform: scale(1.3);
     opacity: 1;
 }
+
+/*!*carousel*!*/
+
+/*.carousel {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    min-height: 100vh;*/
+/*    background: var(--clr-light);*/
+/*}*/
+
+/*TODO: fix into row instead of column, add hyperlink to pages, finish video::
+
+/*https://www.youtube.com/watch?v=PsNaoDhzQm0&list=PLpwngcHZlPae68z_mLFNfbJFIJVJ_Zcx2*/
+/*@4:29*/
+/*   *!*/
+/*.container {*/
+/*    max-width: 1200px;*/
+/*    width: 95%;*/
+
+/*}*/
+
+/*.slider-wrapper .image-list{*/
+/*    display: grid;*/
+/*    gap: 18px;*/
+/*    overflow-x:auto;*/
+/*    scrollbar-width: none;*/
+/*    grid-template-columns: repeat(10, 1fr);*/
+
+/*}*/
+
+/*.slider-wrapper .image-list::-webkit-scrollbar{*/
+/*    display: none;*/
+/*}*/
+
+/*.slider-wrapper .image-list .image-item {*/
+/*    width: 325 px;*/
+/*    height: 400 px;*/
+/*    object-fit: cover;*/
+/*}*/
+
 
 /* footer */
 
@@ -445,6 +490,7 @@ header {
 }
 
 .footer__link:hover {
+    color: var(--clr-dark);
     text-decoration: underline;
 }
 
@@ -452,16 +498,20 @@ header {
     list-style: none;
     display: flex;
     justify-content: center;
-    margin: 2em 0 0;
+
+
+    margin: 1em 0 0;
     padding: 0;
 }
 
+
 .social-list__item {
-    margin: 0 .5em;
+    margin: 0.5em;
 }
 
 .social-list__link {
-    padding: .5em;
+    color: var(--clr-dark);
+    padding: 0em;
 }
 
 
