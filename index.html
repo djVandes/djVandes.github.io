@@ -5,6 +5,7 @@
         <!-- ensures it works on mobile aswell as desktop-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>DJ Vandesande Portfolio Website</title>
+        <link rel="shortcut icon" type="image/png" href="img/astronaut_icon.png"/>
 
         <!-- normalizes bugs between mobile vs desktop browsers-->
 
@@ -21,126 +22,145 @@
 
     </head>
     <body>
+
         <header>
-            <!--
-            <div class = "logo">
-                <img src = "img/signature.jpg" alt="">
-            </div>
-            -->
-            <button class="nav-toggle" aria-label="toggle navigation">
+        <button class="nav-toggle" aria-label="toggle navigation">
                 <span class="hamburger"></span>
-            </button>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <!-- website sections -->
-                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#experience" class="nav__link">Work Experience</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
-                    <li class="nav__item"><a href="#art" class="nav__link">My Artworks</a></li>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <!-- website sections -->
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#art" class="nav__link">My Artworks</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                <li class="nav__item"><a href="#experiences" class="nav__link">Work Experience</a></li>
                 </ul>
-            </nav>
+        </nav>
+<!--  Signature
+            <div class = "logo">-->
+<!--            <img src = "img/signature.jpg" alt="">-->
+<!--        </div>-->
         </header>
 
         <!-- introduction with classes for styling and id for anchoring-->
         <section class="intro" id="home">
+
             <!-- double hyphen indicated modifier class-->
             <h1 class="section__title section__title--intro">
-                Hello, I am <strong> DJ Vandesande</strong>
+                Hi! My name's <strong> DJ Vandesande</strong>
             </h1>
-            <p class="section__subtitle section__subtitle--intro">QU BaSC of Comp Eng</p>
+            <p class="section__subtitle section__subtitle--intro"><strong>QU BaSC of Comp Eng</strong></p>
             <img src="img/headshot.jpg" alt="a picture of DJ Vandesande" class = "intro__img">
         </section>
 
 
-        <!-- My services -->
-        <section class="work-experience" id="experiences">
-            <h2 class="section__title section__title--experiences">Work Experience</h2>
-            <div class="experiences">
-                <div class="experience">
-                <!-- / Service -->
-                    <h3>R&D @ Maintenance Drone Co.</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-                </div> <!-- / service -->
 
-                <div class="experience">
-                    <h3>Design Solutions Engineer @ QU</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div> <!-- / service -->
+        <!-- My Works -->
+        <section class = "artwork" id="art">
+            <h2 class="section__title">Some Works</h2>
+            <p class = "section__subtitle">
+                Including watercolour portraiture, acrylic scenery, graphite hyperrealism and others, click on each image for more details!
+            </p>
 
-                <div class="experience">
-                    <h3>Queen's Cerebral Language Innovation (QCLI) @ QU</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
+            <div class = "portfolio">
+
+                <a href="orange-item.html" class="portfolio__item">
+                    <img src="img/orange.jpg" alt="Self Portrait" class="portfolio__img">
+                </a>
+
+                <a href="yellow-item.html" class="portfolio__item">
+                    <img src="img/yellow.jpg" alt="City" class="portfolio__img">
+                </a>
+
+                <a href="purple-item.html" class="portfolio__item">
+                    <img src="img/purple.JPG" alt="Jupiter" class="portfolio__img">
+                </a>
+
+                <a href="blue-item.html" class="portfolio__item">
+                    <img src="img/blue.jpg" alt="Scuba" class="portfolio__img">
+                </a>
+
+                <a href="red-item.html" class="portfolio__item">
+                    <img src="img/red.jpg" alt="Blindfold" class="portfolio__img">
+                </a>
+
+                <a href="grey-item.html" class="portfolio__item">
+                    <img src="img/grey.jpg" alt="Henning May Portrait" class="portfolio__img">
+                </a>
+
             </div>
-
-            <a href = "#art" class = "btn">My Artworks</a>
         </section>
+<!--        <section class = "carousel" id="slideshow">>-->
+
+<!--            <div class = "container">-->
+<!--                <div class = "slider-wrapper">-->
+<!--                    <div class = "image-list">-->
+<!--                        <img src="img/orange.jpg" alt="Self Portrait" class="image-item">-->
+<!--                        <img src="img/yellow.jpg" alt="City" class="image-item">-->
+<!--                        <img src="img/purple.JPG" alt="Jupiter" class="image-item">-->
+<!--                        <img src="img/blue.jpg" alt="Scuba" class="image-item">-->
+<!--                        <img src="img/red.jpg" alt="Blindfold" class="image-item">-->
+<!--                        <img src="img/grey.JPG" alt="Henning May Portrait" class="image-item">-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </section>-->
 
 
-    <!-- About Me -->
+        <!-- About Me -->
         <section class ="about-me" id = "about">
             <h2 class="section__title section__title--about">Who I am</h2>
-            <p class = "section__subtitle section__subtitle--about">they/them</p>
+            <p class = "section__subtitle section__subtitle--about"></p>
 
             <div class="about-me__body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>As a third year computer engineer I am passionate about problem-solving and creative design, which
+                    I apply in cryptography and computer architecture through digital systems, the field of
+                    Aerospace as a kitrocket member of the Rocketry Engineering team, and exploring creative sustainability
+                    as architectural engineer in the Queens Solar Design team.</p>
+                <p> Outside of university my interests include art and exercise, including boxing, beer league hockey,
+                    and cheering on my sister on the Carleton Ravens Rugby team. </p>
             </div>
 
             <img src="img/about_me.jpg" alt="Garden Painting" class="about-me__img">
         </section>
 
-    <!-- My Work -->
-        <section class = "artwork" id="art">
-            <h2 class="section__title">My Artworks</h2>
-            <p class = "section__subtitle"></p>
+        <!-- work experience -->
+        <section class="work-experience" id="experiences">
+            <h2 class="section__title section__title--experiences"><strong>Work Experience</strong></h2>
+            <div class="experiences">
+                <div class="experience">
 
-            <div class = "portfolio">
+                    <h3> Software Intern, Maintenance Drone Co.</h3>
+                    <p>AI image fault detection to roofing identify roof damage from drone images.
+                        Projects include drone flight surveys, annotating training image sets, and debugging.</p>
 
-                <!-- Acrylics -->
-                <a href="#" class="portfolio__item">
-                    <img src="img/red.JPG" alt="Blindfold" class="portfolio__img">
-                </a>
+                </div>
 
-                <!-- Self portraits -->
-                <a href="#" class="portfolio__item">
-                    <img src="img/orange.JPG" alt="Self Portrait" class="portfolio__img">
-                </a>
+                <div class="experience">
+                    <h3>Lunar Rover Solar Panel Design Engineer</h3>
+                    <p>Designed a deployable solar panel prototype on a lunar rover using
+                        compliant mechanisms, artificial muscles, and shape memory alloys
+                        for the CSA's PEEKbot project.</p>
+                </div>
 
-                <!-- Hyperrealism -->
-                <a href="portfolio-item.html" class="portfolio__item">
-                    <img src="img/blue.JPG" alt="Scuba Diver" class="portfolio__img">
-                </a>
-
-                <!-- Watercolour -->
-                <a href="#" class="portfolio__item">
-                    <img src="img/yellow.JPG" alt="City" class="portfolio__img">
-                </a>
-
-                <!-- Oils -->
-                <a href="#" class="portfolio__item">
-                    <img src="img/green.JPG" alt="Garden" class="portfolio__img">
-                </a>
-
-                <!-- Woodburning -->
-                <a href="#" class="portfolio__item">
-                    <img src="img/purple.JPG" alt="Astronaut" class="portfolio__img">
-                </a>
-                <!-- Sculpting -->
-                <a href="#" class="portfolio__item">
-                    <img src="img/blue.JPG" alt="Scuba Diver" class="portfolio__img">
-                </a>
-
+                <div class="experience">
+                    <h3>Safety Wrist Band Design Engineer</h3>
+                    <p>Designed an alarm system wristband for students walking home at night.
+                        Project integrated SMS, thumbprint, GPS, and heart rate sensors in Arduino to the band.</p>
+                </div>
             </div>
+            <a href = "#art" class = "btn">My Artworks</a>
         </section>
+
+
     <!-- Footer-->
         <footer class="footer">
-            <a href="mailto:20djv2@queensu.ca" class="footer__link">20djv2@queensu.ca</a>
+            <a href="https://www.instagram.com/leonardo.da.vandes/?hl=en" class="footer__link">@leonardo.da.vandes</a>
             <ul class="social-list">
                 <li class="social-list__item">
-                    <a class="social-list__link" href="https://www.instagram.com/leonardo.da.vandes/?hl=en">
-                        <i class="fab fa-brands fa-instagram fa-beat-fade"></i>
+                    <a class="social-list__link" href="mailto:20djv2@queensu.ca">
+                        <i class="fab fa-brands fa-instagram fa-gmail"></i>
                     </a>
                 </li>
                 <li class="social-list__item">
