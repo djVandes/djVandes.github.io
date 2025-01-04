@@ -618,7 +618,7 @@ header {
     right: 10px; /* Adjust position */
 }
 
-.carousel__indicators {
+.carousel__indicator {
     display: flex;
     justify-content: center;
     margin-top: 1em;
