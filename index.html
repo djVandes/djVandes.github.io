@@ -28,9 +28,9 @@
             <ul class="nav__list">
                 <!-- website sections -->
                 <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                <li class="nav__item"><a href="#art" class="nav__link">My Artworks</a></li>
-                <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
                 <li class="nav__item"><a href="#experiences" class="nav__link">Work Experience</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                <li class="nav__item"><a href="#art" class="nav__link">My Artworks</a></li>
                 </ul>
         </nav>
 
@@ -43,45 +43,89 @@
             </h1>
             <p class="section__subtitle section__subtitle--intro"><strong>QU BaSC of Comp Eng</strong></p>
             <img src="img/self.JPEG" alt="a picture of DJ Vandesande" class = "intro__img">
-            <p class="intro__blurb">Thanks for checking out my page! </n>Here you can look at some artworks of mine, neat uni projects, and some links to my socials! This took me way too long to make. </p>
-        </section>
-
-        <!-- My Works -->
-        <section class = "artwork" id="art">
-            <h2 class="section__title">Explore my Portfolio</h2>
-            <p class = "section__subtitle">
-            <strong> Including watercolour, acrylic, oil, graphite and other mediums. 
-                Click on each image for more details!</strong> 
-            </p>
-
-            <div class = "portfolio">
-
-                <a href="orange-item.html" class="portfolio__item" data-text="self portraits">
-                    <img src="img/orange.jpg" alt="Self Portrait" class="portfolio__img">
-                </a>
-<!-- 
-                <a href="yellow-item.html" class="portfolio__item">
-                    <img src="img/yellow.jpg" alt="City" class="portfolio__img">
-                </a> -->
-
-                <a href="purple-item.html" class="portfolio__item" data-text="watercolours">
-                    <img src="img/purple.JPG" alt="Jupiter" class="portfolio__img">
-                </a>
-
-                <a href="blue-item.html" class="portfolio__item" data-text="acrylic pieces">
-                    <img src="img/blue.jpg" alt="Scuba" class="portfolio__img">
-                </a>
-
-                <!-- <a href="red-item.html" class="portfolio__item">
-                    <img src="img/red.jpg" alt="Blindfold" class="portfolio__img">
-                </a> -->
-
-                <a href="grey-item.html" class="portfolio__item" data-text="acrylic pieces">
-                    <img src="img/grey.jpg" alt="Henning May Portrait" class="portfolio__img">
-                </a>
-
+            <div class="intro__blurb">
+                <p>Thanks for checking out my page! </p>
+                <p>Here you can look at some artworks of mine, neat uni projects, and some links to my socials - this took me waaaay too long to make. </p>
             </div>
         </section>
+
+        <!-- work experience -->
+        <section class="work-experience" id="experiences">
+            <h2 class="section__title section__title--experiences"><strong>Work Experience</strong></h2>
+            <div class="experiences">
+
+                <div class="experience">
+                    <h3>ASIC Design Engineer Intern, Marvell Semiconductors</h3>
+                    <p>Designing and debugging Verilog RTL in Cryptography and System Memory applications. 
+                        Developed a multi-agent gen AI network in AWS comparing outputs from Claude, Mistal, and Llama for UVM testing.</p>
+                </div>
+                <div class="experience">
+
+                    <h3> Software Engineer Intern, Maintenance Drone Co.</h3>
+                    <p>Using AI in fault detection to identify roof damage from drone shots.
+                        Projects include drone flights, annotating and testing training data, and debugging report generators.</p>
+
+                </div>
+                <div class="experience">
+                    <h3>Lunar Rover Solar Panel Design Engineer</h3>
+                    <p>Designed a deployable solar panel prototype on a lunar rover using
+                        compliant mechanisms, artificial muscles, and shape memory alloys
+                        for the CSA's PEEKbot project.</p>
+                </div>
+
+            </div>
+            <a href = "#art" class = "btn">My Artworks</a>
+        </section>
+
+
+        <!-- About Me -->
+        <section class ="about-me" id = "about">
+            <h2 class="section__title section__title--about">A little about me... </h2>
+            <p class = "section__subtitle section__subtitle--about"></p>
+
+            <div class="about-me__text">
+                <p>In comp eng I'm passionate about problem-solving and creative design, which
+                    I apply in cryptography and architecture in my internship at Marvell. 
+                </p> 
+                <p>I love exploring the field of Aerospace as a Kit Rocket and Tech Dev member of the rocketry engineering team at Queen's as well as coordinating outreach to foster interest in the fields of Space and Engineering with the Queen's Human Exploration Rover Competition, happening this year in Alabama!</p>
+                <p> Outside of all the nerd stuff, my interests include painting when I can, seeing the local punk and drag scenes wherever I am, and playing club hockey and rugby. 
+                </p>
+            </div>
+
+            <img src="img/nerd.JPEG" alt="Garden Painting" class="about-me__img">
+        </section>
+
+
+
+
+     <!-- My Works -->
+     <section class = "artwork" id="art">
+        <h2 class="section__title">Explore my Portfolio!</h2>
+        <p class = "section__subtitle">
+        <strong> Including watercolour, acrylic, oil, graphite and other mediums. 
+            Click on each image for more details!</strong> 
+        </p>
+
+        <div class = "portfolio">
+
+            <a href="orange-item.html" class="portfolio__item" data-text="portraits">
+                <img src="img/self.png" alt="Self Portrait" class="portfolio__img">
+            </a>
+
+            <a href="purple-item.html" class="portfolio__item" data-text="oils">
+                <img src="img/purple.JPG" alt="Jupiter" class="portfolio__img">
+            </a>
+
+            <a href="blue-item.html" class="portfolio__item" data-text="acrylics">
+                <img src="img/blue.jpg" alt="Scuba" class="portfolio__img">
+            </a>
+
+            <a href="pencils.html" class="portfolio__item" data-text="pencils">
+                <img src="img/grey.jpg" alt="Henning May Portrait" class="portfolio__img">
+            </a>
+
+        </div>
+    </section>
 <!--        <section class = "carousel" id="slideshow">>-->
 
 <!--            <div class = "container">-->
@@ -97,52 +141,6 @@
 <!--                </div>-->
 <!--            </div>-->
 <!--        </section>-->
-
-
-        <!-- About Me -->
-        <section class ="about-me" id = "about">
-            <h2 class="section__title section__title--about">Who I am</h2>
-            <p class = "section__subtitle section__subtitle--about"></p>
-
-            <div class="about-me__body">
-                <p>As a third year computer engineer I am passionate about problem-solving and creative design, which
-                    I apply in cryptography and computer architecture through digital systems, the field of
-                    Aerospace as a kitrocket member of the Rocketry Engineering team, and exploring creative sustainability
-                    as architectural engineer in the Queens Solar Design team.</p>
-                <p> Outside of university my interests include art and exercise, including boxing, beer league hockey,
-                    and cheering on my sister on the Carleton Ravens Rugby team. </p>
-            </div>
-
-            <img src="img/about_me.jpg" alt="Garden Painting" class="about-me__img">
-        </section>
-
-        <!-- work experience -->
-        <section class="work-experience" id="experiences">
-            <h2 class="section__title section__title--experiences"><strong>Work Experience</strong></h2>
-            <div class="experiences">
-                <div class="experience">
-
-                    <h3> Software Intern, Maintenance Drone Co.</h3>
-                    <p>AI image fault detection to roofing identify roof damage from drone images.
-                        Projects include drone flight surveys, annotating training image sets, and debugging.</p>
-
-                </div>
-
-                <div class="experience">
-                    <h3>Lunar Rover Solar Panel Design Engineer</h3>
-                    <p>Designed a deployable solar panel prototype on a lunar rover using
-                        compliant mechanisms, artificial muscles, and shape memory alloys
-                        for the CSA's PEEKbot project.</p>
-                </div>
-
-                <div class="experience">
-                    <h3>Safety Wrist Band Design Engineer</h3>
-                    <p>Designed an alarm system wristband for students walking home at night.
-                        Project integrated SMS, thumbprint, GPS, and heart rate sensors in Arduino to the band.</p>
-                </div>
-            </div>
-            <a href = "#art" class = "btn">My Artworks</a>
-        </section>
 
 
     <!-- Footer-->
