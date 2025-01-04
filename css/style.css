@@ -8,18 +8,20 @@
 
 /* Custom Properties, update these for your own design */
 :root {
+
     --ff-primary: 'Source Sans Pro', sans-serif;
     --ff-secondary: 'Source Code Pro', monospace;
 
     --fw-reg: 300;
     --fw-bold: 900;
 
-    /*CHANGE COLOUR SELECTION HERE*/
-    --clr-light: #303030;
-    --clr-dark: #e0dbd8;
-    --clr-accent: #5379a6;
-    --clr-mid: #3c3e41;
+    /*COLOURS*/
+    --clr-drk: #2f1827;             /* Muted dark brown */
+    --clr-accent: #6d203d;          /* Muted deep red */
+    --clr-accent-light: #950e32;    /* Muted lighter red */
+    --clr-lt: #d7ccc8;              /* Muted light cream */
 
+    border-radius: 10px; /* Add rounded corners */
 
     /*FONT SIZES*/
     --fs-h1: 3rem;
@@ -41,15 +43,13 @@
     }
 }
 
-/* General styles */
-
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    background: var(--clr-light);
-    color: var(--clr-dark);
+    background: var(--clr-drk);
+    color: var(--clr-lt);
     margin: 0;
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
@@ -80,7 +80,7 @@ strong { font-weight: var(--fw-bold) }
     display: inline-block;
     padding: .5em 1.5em;
     background: var(--clr-accent);
-    color: var(--clr-dark);
+    color: var(--clr-lt);
     text-decoration: none;
     cursor: pointer;
     font-size: 1.25rem;
@@ -128,10 +128,10 @@ h3 { font-size: var(--fs-h3) }
 
 .section__subtitle--intro,
 .section__subtitle--about {
-    background: var(--clr-accent);
+    background: var(--clr-accent-light);
     padding: .25em 1em;
     font-family: var(--ff-secondary);
-    color: var(--clr-light);
+    color: var(--clr-drk);
 
     margin-bottom: 1em;
 }
@@ -157,8 +157,8 @@ header {
 
 .nav {
     position: fixed;
-    background: var(--clr-dark);
-    color: var(--clr-dark);
+    background: var(--clr-lt);
+    color: var(--clr-lt);
     top: 0;
     bottom: 0;
     left: 0;
@@ -181,7 +181,7 @@ header {
 }
 
 .nav__link {
-    color: var(--clr-light);
+    color: var(--clr-drk);
     font-weight: var(--fw-bold);
     font-size: var(--fs-h2);
     text-decoration: none;
@@ -301,17 +301,16 @@ header {
 /*  work experience  */
 
 .work-experience {
-
     background-image: url(../img/mdc.jpg);
-    background-color: var(--clr-dark);
+    background-color: var(--clr-lt);
     background-size: cover;
     /* background-blend-mode: multiply; */
-    color: var(--clr-dark);
+    color: var(--clr-lt);
     text-align: center;
 }
 
 .section__title--experiences {
-    color: var(--clr-accent);
+    color: var(--clr-lt);
     position: relative;
 }
 
@@ -321,7 +320,7 @@ header {
     width: 2em;
     height: .5px;
     margin: 0.5em auto 0.5em;
-    background: var(--clr-light);
+    background: var(--clr-drk);
     opacity: 0.25;
 }
 
@@ -390,8 +389,8 @@ header {
 /* artworks */
 
 .artwork {
-    background-color: var(--clr-dark);
-    color: var(--clr-light);
+    background-color: var(--clr-lt);
+    color: var(--clr-drk);
     text-align: center;
 }
 
@@ -404,12 +403,22 @@ header {
 
 .portfolio__item {
     background: var(--clr-accent);
+    border: 2px solid var(--clr-lt); /* Add border */
+    border-radius: 10px; /* Add rounded corners */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Add padding to extend border */
+
 }
 
 .portfolio__img {
     transition:
          transform 750ms cubic-bezier(.5, 0, .5, 1),
          opacity 250ms linear;
+    max-width: calc(100% - 40px); /* Adjust max-width to account for padding */
+    max-height: calc(100% - 40px); /* Adjust max-height to account for padding */
+    border-radius: 10px; /* Add rounded corners */
 }
 
 .portfolio__item:focus {
@@ -430,7 +439,7 @@ header {
 /*    align-items: center;*/
 /*    justify-content: center;*/
 /*    min-height: 100vh;*/
-/*    background: var(--clr-light);*/
+/*    background: var(--clr-drk);*/
 /*}*/
 
 /*TODO: fix into row instead of column, add hyperlink to pages, finish video::
@@ -490,7 +499,7 @@ header {
 }
 
 .footer__link:hover {
-    color: var(--clr-dark);
+    color: var(--clr-lt);
     text-decoration: underline;
 }
 
@@ -510,7 +519,7 @@ header {
 }
 
 .social-list__link {
-    color: var(--clr-dark);
+    color: var(--clr-lt);
     padding: 0em;
 }
 
