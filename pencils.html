@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
     <!-- icons/brands-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <!-- fonts-->
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
@@ -42,15 +43,64 @@
             <h1>Portraiture</strong></h1>
     </div>
     <p class="section__subtitle section__subtitle--intro">    </p>
-    <img src="img/grey.jpg" alt="project" class = "intro__img">
+    <img src="img/henning.jpg" alt="project" class = "intro__img">
 </section>
 
-<div class="portfolio-item-individual">
-    <p>During COVID in lock down I explored hyperrealism to see just how close to a reference image I could get</p>
-    <img src="img/grey.jpg" alt="">
-    <p> Click the drop-down menu to return to the main page, and view my instagram linked below for more works! </p>
+<!-- introduction with classes for styling and id for anchoring-->
+<section class="carousel-section">
+    <p>
+        Here are some of my favourite pieces in graphite!
+    </p>
+    <div class="carousel">
+        <div class="carousel__container">
+            <div class="carousel__slide">
+                <div class="carousel__frame">
+                    <img src="img/stoner.png" alt="Artwork 3">
+                    <div class="carousel__caption">2024</div>
 
-</div>
+                </div>
+            </div>
+            <div class="carousel__slide">
+                <div class="carousel__frame">
+                    <img src="img/ohboy.png" alt="Artwork 1">
+                    <div class="carousel__caption">2021</div>
+            </div>
+            <div class="carousel__slide">
+                <div class="carousel__frame">
+                    <img src="img/henning.jpg" alt="Artwork 2">
+                    <div class="carousel__caption">2021</div>
+
+                </div>
+            </div>
+            <div class="carousel__slide">
+                <div class="carousel__frame">
+                    <img src="img/pretty.png" alt="Artwork 1">
+                    <div class="carousel__caption">2023</div>
+                </div>
+            </div>
+            <div class="carousel__slide">
+                <div class="carousel__frame">
+                    <img src="img/smoker.png" alt="Artwork 1">
+                    <div class="carousel__caption">2024</div>
+                </div>
+            </div>
+            <!-- Add more slides as needed -->
+        </div>
+        <button class="carousel__button carousel__button--left" aria-label="Previous slide">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="carousel__button carousel__button--right" aria-label="Next slide">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        <div class="carousel__indicators">
+            <span class="carousel__indicator" data-slide="0"></span>
+            <span class="carousel__indicator" data-slide="1"></span>
+            <span class="carousel__indicator" data-slide="2"></span>
+            <span class="carousel__indicator" data-slide="3"></span>
+            <span class="carousel__indicator" data-slide="4"></span>
+        </div>
+    </div>
+</section>
 
 
 <!-- Footer-->
@@ -80,3 +130,5 @@
 
 </body>
 </html>
+
+
