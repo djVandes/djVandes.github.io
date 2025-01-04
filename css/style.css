@@ -548,7 +548,7 @@ header {
 .carousel__frame {
     background-color: var(--clr-lt);
     width: 80%;
-    height: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -630,6 +630,8 @@ header {
     margin: 0 5px;
     cursor: pointer;
     transition: background 0.3s ease;
+    border: 2px solid var(--clr-drk); /* Add border around indicators */
+
 }
 
 .carousel__indicator.active {
