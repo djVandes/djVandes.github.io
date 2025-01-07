@@ -16,8 +16,8 @@
     --fw-bold: 900;
 
     /*COLOURS*/
-    --clr-drk: #2f1827;             /* Muted dark brown */
-    --clr-accent: #6d203d;          /* Muted deep red */
+    --clr-drk: #26000a;             /* Muted dark brown */
+    --clr-accent: #51081b;          /* Muted deep red */
     --clr-accent-light: #950e32;    /* Muted lighter red */
     --clr-lt: #d7ccc8;              /* Muted light cream */
 
@@ -357,6 +357,8 @@ header {
     margin-bottom: 20px; /* Space between boxes */
     box-shadow: var(--bs); /* Box shadow for depth */
     transition: transform 300ms ease-in-out;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -364,10 +366,22 @@ header {
     transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
+.experience__logo {
+    width: 100px; /* Adjust the size as needed */
+    height: auto;
+    margin-right: 15px; /* Space between the logo and the text */
+    margin-left: 15px; /* Space between the logo and the text */
+}
+
 .experience h3 {
     margin-top: 0;
     color: var(--clr-accent); /* Accent color for headings */
     opacity: 1;
+}
+
+.experience__details {
+    display: flex;
+    flex-direction: column;
 }
 
 .experience p {
@@ -392,6 +406,7 @@ header {
 
 
 .about-me {
+    background: linear-gradient(to bottom, var(--clr-drk), rgb(15, 9, 26));
     max-width: 1500px;
     margin: 0 auto;
 }
@@ -454,7 +469,7 @@ header {
 }
 
 .portfolio__item {
-    background: var(--clr-accent);
+    background: rgb(15, 9, 26);
     border: 2px solid var(--clr-lt); /* Add border */
     border-radius: 10px; /* Add rounded corners */
     display: flex;
@@ -524,7 +539,7 @@ header {
 }
 
 .carousel-section {
-    background: linear-gradient(to bottom, var(--clr-drk), var(--clr-accent));
+    background: linear-gradient(to bottom, var(--clr-drk), rgb(15, 9, 26));
     padding: 2em 0;
     color: var(--clr-lt);
     text-align: center;
@@ -649,7 +664,7 @@ header {
 
 .footer {
     background: #111;
-    color: var(--clr-accent);
+    color: var(--clr-accent-light);
     text-align: center;
     padding: 2.5em 0;
     font-size: var(--fs-h3);
