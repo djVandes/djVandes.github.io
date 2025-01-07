@@ -6,7 +6,6 @@
     box-sizing: border-box;
 }
 
-/* Custom Properties, update these for your own design */
 :root {
 
     --ff-primary: 'Source Sans Pro', sans-serif;
@@ -73,9 +72,6 @@ strong { font-weight: var(--fw-bold) }
     outline-offset: 3px;
 }
 
-
-/* Buttons */
-
 .btn {
     display: inline-block;
     padding: .5em 1.5em;
@@ -93,9 +89,6 @@ strong { font-weight: var(--fw-bold) }
 .btn:hover {
     transform: scale(1.1);
 }
-
-
-/* Typography */
 
 h1,
 h2,
@@ -144,7 +137,9 @@ h3 { font-size: var(--fs-h3) }
 }
 
 
-/* header */
+/**********/
+/* HEADER */
+/**********/
 
 header {
     display: flex;
@@ -248,8 +243,9 @@ header {
 .hamburger::before { top: 8px; } /*icon setup*/
 .hamburger::after { bottom: 8px; }
 
-
-/*  Intro section  */
+/*********/
+/* INTRO */
+/*********/
 
 .intro {
     position: relative;
@@ -271,8 +267,6 @@ header {
 
 
 }
-
-
 
 @media (min-width: 600px) {
     .intro {
@@ -313,26 +307,19 @@ header {
         margin-top: 0px;
         margin-left: 10px;
         max-width: 400px; /* Set a maximum width for the blurb box */
-
-
     }
-
 }
 
-/*  work experience  */
+/***************/
+/* EXPERIENCES */
+/***************/
 
 .work-experience {
     background-image: url(../img/mdc.jpg);
-    background-color: var(--clr-lt);
     background-size: cover;
     /* background-blend-mode: multiply; */
     color: var(--clr-lt);
     text-align: center;
-}
-
-.section__title--experiences {
-    color: var(--clr-lt);
-    position: relative;
 }
 
 .section__title--experiences::after {
@@ -347,6 +334,10 @@ header {
 
 .experiences {
     margin-bottom: 4em;
+    display: flex;
+    align-items: center; /* Center the experiences horizontally */
+    justify-content: center; /* Center the content within each experience item */
+
 }
 
 .experience {
@@ -354,11 +345,16 @@ header {
     border: 2px solid var(--clr-drk); /* Dark border */
     border-radius: 10px; /* Rounded corners */
     padding: 20px; /* Padding inside the box */
-    margin-bottom: 20px; /* Space between boxes */
     box-shadow: var(--bs); /* Box shadow for depth */
+
+    align-items: center;
+    justify-content: center; /* Center the content within each experience item */
+
     transition: transform 300ms ease-in-out;
     display: flex;
-    align-items: center;
+    min-width: 400px; /* Adjust the size as needed */
+    
+    margin-bottom: 20px; /* Space between boxes */
 }
 
 
@@ -382,6 +378,8 @@ header {
 .experience__details {
     display: flex;
     flex-direction: column;
+    flex: 1; /* Allow the details to take up the remaining space */
+    min-width: 0; /* Prevent overflow */
 }
 
 .experience p {
@@ -453,8 +451,9 @@ header {
     }
 }
 
+/************/
 /* ARTWORKS */
-
+/************/
 .artwork {
     background-color: var(--clr-lt);
     color: var(--clr-drk);
@@ -480,8 +479,6 @@ header {
     overflow: hidden;
     transition: background 300ms ease-in-out;
 }
-
-
 
 .portfolio__item::before {
     content: attr(data-text);
@@ -528,8 +525,25 @@ header {
 
 }
 
+/* Individual portfolio item styles */
 
+.portfolio-item-individual {
+    padding: 0 2em 2em;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.portfolio-item-individual p {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/************/
 /* CAROUSEL */
+/************/
+
 .carousel {
     position: relative;
     width: 100%;
@@ -660,10 +674,11 @@ header {
 
 }
 
+/**********/
 /* FOOTER */
-
+/**********/
 .footer {
-    background: #111;
+    background: rgb(15, 9, 26);
     color: var(--clr-accent-light);
     text-align: center;
     padding: 2.5em 0;
@@ -711,16 +726,3 @@ header {
 }
 
 
-/* Individual portfolio item styles */
-
-.portfolio-item-individual {
-    padding: 0 2em 2em;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.portfolio-item-individual p {
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}
