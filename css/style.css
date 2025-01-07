@@ -335,6 +335,8 @@ header {
 .experiences {
     margin-bottom: 4em;
     display: flex;
+    flex-wrap: wrap; /* Allow items to wrap within the container */
+    gap: 1.5em; /* Add space between each experience item */
     align-items: center; /* Center the experiences horizontally */
     justify-content: center; /* Center the content within each experience item */
 
@@ -353,7 +355,9 @@ header {
     transition: transform 300ms ease-in-out;
     display: flex;
     min-width: 400px; /* Adjust the size as needed */
-    
+    position: relative;
+
+
     margin-bottom: 20px; /* Space between boxes */
 }
 
