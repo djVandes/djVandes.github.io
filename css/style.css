@@ -8,8 +8,10 @@
 
 :root {
 
-    --ff-primary: 'Source Sans Pro', sans-serif;
+    --ff-primary: 'Poppins', sans-serif; /* Add the new modern font */
     --ff-secondary: 'Source Code Pro', monospace;
+    --ff-modern: 'Poppins', sans-serif; /* Add the new modern font */
+
 
     --fw-reg: 600;
     --fw-bold: 900;
@@ -31,6 +33,28 @@
     /*BOX SHADOWS*/
     --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
     0.125em 0.125em 0.25em rgba(0,0,0,.15);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .intro__blurb p {
+        font-size: 1rem; /* Adjust font size for mobile screens */
+        line-height: 1.5; /* Adjust line height for better readability */
+        margin: 0 1em; /* Add margin to the sides for better spacing */
+    }
+
+    .intro__img {
+        width: 100%; /* Make the image responsive */
+        height: auto;
+    }
+
+    .section__subtitle--intro {
+        font-size: 1.5rem; /* Adjust subtitle font size for mobile screens */
+    }
+
+    .section__title--intro {
+        font-size: 2rem; /* Adjust title font size for mobile screens */
+    }
 }
 
 @media (min-width: 800px) {
@@ -97,7 +121,9 @@ h3 {
     margin: 0;
 }
 
-h1 { font-size: var(--fs-h1) }
+h1 { 
+    font-size: var(--fs-h1) 
+}
 h2 { font-size: var(--fs-h2) }
 h3 { font-size: var(--fs-h3) }
 
