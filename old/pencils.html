@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <!-- ensures it works on mobile aswell as desktop-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pencils</title>
+    <title>DJ Vandesande Portfolio Website</title>
     <link rel="shortcut icon" type="image/png" href="img/astronaut_icon.png"/>
 
     <!-- normalizes bugs between mobile vs desktop browsers-->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-    
     <!-- icons/brands-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -41,43 +40,70 @@
 <section class="intro">
     <!-- double hyphen indicated modifier class-->
     <div class="section__title section__title--intro">
-        <h1><strong>Graphite Works</strong></h1>
+        <h1><strong> Graphite </h1> 
+            <h1>Portraiture</strong></h1>
     </div>
-    <p class="section__subtitle section__subtitle--intro">covid was long</p>
+    <p class="section__subtitle section__subtitle--intro">ate w these</p>
     <img src="img/henning.jpg" alt="project" class = "intro__img">
 </section>
 
-<!-- My Works -->
-<section class = "watercolours" id="w_art">
-    <div class = "subpage">
-        <a class="subpage__item">
-            <img src="img/henning.jpg" alt="birds eye" class="subpage__img">
-        </a>
-        <a class="subpage__item">
-            <img src="img/ohboy.png" alt="dipshit" class="subpage__img">
-        </a>
-        <a class="subpage__item">
-            <img src="img/pretty.png" alt="straddle me" class="subpage__img">
-        </a>
-        <a class="subpage__item">
-            <img src="img/smoker.png" alt="keep em guessing" class="subpage__img">
-        </a>
-        <a class="subpage__item">
-            <img src="img/stoner.png" alt="keep em guessing" class="subpage__img">
-        </a>      
-        <a class="subpage__item">
-            <img src="img/eros.jpg" alt="keep em guessing" class="subpage__img">
-        </a>        
+<!-- introduction with classes for styling and id for anchoring-->
+<section class="carousel-section">
 
-    </div>
-    <div style="text-align: center; padding-top: 100px;">
-        <a href="index.html#art" class="btn">Main</a>
+    <div class="carousel">
+        <div class="carousel__container">
+            <div class="carousel__slide">
+                <div class="carousel__frame">
+                    <img src="img/stoner.png" alt="Artwork 3">
+                    <div class="carousel__caption">2024</div>
+                </div>
+            </div>
+            <div class="carousel__slide">
+                <div class="carousel__frame">
+                    <img src="img/ohboy.png" alt="Artwork 1">
+                    <div class="carousel__caption">2021</div>
+                </div>
+            </div>
+            <div class="carousel__slide">
+                <div class="carousel__frame">
+                    <img src="img/henning.jpg" alt="Artwork 2">
+                    <div class="carousel__caption">2021</div>
+                </div>
+            </div>
+            <div class="carousel__slide">
+                <div class="carousel__frame">
+                    <img src="img/pretty.png" alt="Artwork 1">
+                    <div class="carousel__caption">2023</div>
+                </div>
+            </div>
+            <div class="carousel__slide">
+                <div class="carousel__frame">
+                    <img src="img/smoker.png" alt="Artwork 1">
+                    <div class="carousel__caption">2024</div>
+                </div>
+            </div>
+            <!-- Add more slides as needed -->
+        </div>
+        <button class="carousel__button carousel__button--left" aria-label="Previous slide">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="carousel__button carousel__button--right" aria-label="Next slide">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+
+        <div class="carousel__indicators">
+            <span class="carousel__indicator" data-slide="0"></span>
+            <span class="carousel__indicator" data-slide="1"></span>
+            <span class="carousel__indicator" data-slide="2"></span>
+            <span class="carousel__indicator" data-slide="3"></span>
+            <span class="carousel__indicator" data-slide="4"></span>
+            <!-- Add more indicators as needed -->
+        </div>
     </div>
 </section>
 
 
-
-<!-- Footer -->
+<!-- Footer-->
 <footer class="footer">
     <a href="https://www.instagram.com/leonardo.da.vandes/?hl=en" class="footer__link">@leonardo.da.vandes</a>
     <ul class="social-list">
@@ -88,17 +114,21 @@
         </li>
         <li class="social-list__item">
             <a class="social-list__link" href="https://www.linkedin.com/in/dj-vandesande/">
-                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-brands fa-linkedin"></i>
             </a>
         </li>
         <li class="social-list__item">
             <a class="social-list__link" href="https://github.com/djVandes">
-                <i class="fab fa-github"></i>
+                <i class="fab fa-brands fa-github"></i>
             </a>
         </li>
     </ul>
 </footer>
 
 <script src="js/index.js"></script>
+
+
 </body>
 </html>
+
+

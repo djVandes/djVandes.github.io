@@ -5,11 +5,12 @@
         <!-- ensures it works on mobile aswell as desktop-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <title>deejspace</title>
+        <title>DJ Vandesande</title>
         <link rel="shortcut icon" type="image/png" href="img/astronaut_icon.png"/>
 
         <!-- normalizes bugs between mobile vs desktop browsers-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        
         <!-- icons/brands-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
@@ -19,7 +20,6 @@
 
     </head>
     <body>
-
         <header>
         <button class="nav-toggle" aria-label="toggle navigation">
                 <span class="hamburger"></span>
@@ -41,45 +41,35 @@
             <p class="section__subtitle section__subtitle--intro"><strong>QU BaSC of Comp Eng</strong></p>
             <img src="img/self.JPEG" alt="a picture of DJ Vandesande" class = "intro__img">
             <div class="intro__blurb">
-                <p>Thanks for checking out my page! </p>
-                <p>Here you can look at some artworks of mine, neat uni projects, and some links to my socials - this took me waaaay too long to make. </p>
+                <p>Hello World!</p>
+                <p>Check out some of my artworks, neat engineering projects, and some links to my social media </p>
+                <p>Enjoy! </p>
             </div>
         </section>
 
         <!-- work experience -->
         <section class="work-experience" id="experiences">
-            <h2 class="section__title section__title--experiences">Work Experience</h2>
+            <h2 class="section__title section__title--experiences">Engineering</h2>
             <div class="experiences">
                 
-                <a href="asic.html" class="experience">
-                    <img src="img/marvell.png" alt="Marvell Semiconductors" class="experience__logo">
-                    <div class="experience__details">
-                        <h3>ASIC Design Engineer Intern</h3>
-                        <p>Marvell Semiconductors</p>
-                    </div>
-                    <!-- <p>Designing and debugging Verilog RTL in Cryptography and System Memory applications. 
-                        Developed a multi-agent gen AI network in AWS comparing outputs from Claude, Mistal, and Llama for UVM testing.</p> -->
-                </a>
                 <a href="ai.html" class="experience">
-                    <img src="img/droneco.jpg" alt="Maintenance Drone Co." class="experience__logo">
+                    <img src="img/ai.png" alt="Marvell Semiconductors" class="experience__logo">
                     <div class="experience__details">
-                        <h3>Software Engineer Intern</h3>
-                        <p>Maintenance Drone Co.</p>
+                        <h3>AI Projects</h3>
                     </div>
-                    <!-- <p>Using AI in fault detection to identify roof damage from drone shots.
-                        Projects include drone flights, annotating and testing training data, and debugging report generators.</p> -->
                 </a>
-                <a href="queens.html" class="experience">
-                    <img src="img/queens.gif" alt="Queen's University" class="experience__logo">
+                <a href="aero.html" class="experience">
+                    <img src="img/rocket.png" alt="Maintenance Drone Co." class="experience__logo">
                     <div class="experience__details">
-                        <h3>Lunar Rover Solar Panel Design Engineer</h3>
-                        <p>Queen's University</p>
+                        <h3>Aerospace Projects</h3>
                     </div>
-                    <!-- <p>Designed a deployable solar panel prototype on a lunar rover using
-                        compliant mechanisms, artificial muscles, and shape memory alloys
-                        for the CSA's PEEKbot project.</p> -->
                 </a>
-
+                <a href="webdev.html" class="experience">
+                    <img src="img/webdev.png" alt="Queen's University" class="experience__logo">
+                    <div class="experience__details">
+                        <h3>Front End Projects</h3>
+                    </div>
+                </a>
             </div>
             <a href = "#art" class = "btn">My Artworks</a>
         </section>
@@ -89,16 +79,11 @@
         <section class ="about-me" id = "about">
             <h2 class="section__title section__title--about">A little about me... </h2>
             <p class = "section__subtitle section__subtitle--about"></p>
-
             <div class="about-me__text">
-                <p>In comp eng I'm passionate about problem-solving and creative design, which
-                    I apply in cryptography and architecture in my internship at Marvell. 
-                </p> 
-                <p>I love exploring the field of Aerospace as a Kit Rocket and Tech Dev member of the rocketry engineering team at Queen's as well as coordinating outreach to foster interest in the fields of Space and Engineering with the Queen's Human Exploration Rover Competition, happening this year in Alabama!</p>
-                <p> Outside of all the nerd stuff, my interests include painting when I can, seeing the local punk and drag scenes wherever I am, and playing club hockey and rugby. 
-                </p>
+                <p>In comp eng I'm passionate about problem-solving and creative design, which I apply in cryptography and architecture design in my internship at Marvell.</p> 
+                <p>I love exploring the field of Aerospace as a Kit Rocket and Tech Dev member of the rocketry engineering team at Queen's as well as coordinating outreach to foster interest in the fields of Space and Engineering with the NASA's Human Exploration Rover Competition, happening this year in Alabama!</p>
+                <p>Outside of all the nerd stuff, my interests include painting when I can, seeing the local punk and drag scenes wherever I am, and playing club hockey and rugby. </p>
             </div>
-
             <img src="img/nerd.JPEG" alt="Garden Painting" class="about-me__img">
         </section>
 
@@ -112,20 +97,20 @@
 
             <div class = "portfolio">
 
-                <a href="portraits.html" class="portfolio__item" data-text="portraits">
-                    <img src="img/self.png" alt="Self Portrait" class="portfolio__img">
+                <a href="watercolours.html" class="portfolio__item" data-text="Watercolours">
+                    <img src="img/orange.jpg" alt="Watercolours" class="portfolio__img">
                 </a>
 
-                <a href="oils.html" class="portfolio__item" data-text="oils & waters">
-                    <img src="img/tattoo.png" alt="Jupiter" class="portfolio__img">
+                <a href="oils.html" class="portfolio__item" data-text="Oils">
+                    <img src="img/green.png" alt="Oils" class="portfolio__img">
                 </a>
 
-                <a href="pencils.html" class="portfolio__item" data-text="pencils">
-                    <img src="img/henning.jpg" alt="Henning May Portrait" class="portfolio__img">
+                <a href="pencils.html" class="portfolio__item" data-text="Graphites">
+                    <img src="img/henning.jpg" alt="Graphites" class="portfolio__img">
                 </a>
 
-                <a href="burns.html" class="portfolio__item" data-text="woods">
-                    <img src="img/eagle.png" alt="Scuba" class="portfolio__img">
+                <a href="more.html" class="portfolio__item" data-text="More">
+                    <img src="img/eagle.png" alt="More" class="portfolio__img">
                 </a>
 
             </div>

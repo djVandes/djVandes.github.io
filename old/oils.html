@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- ensures it works on mobile aswell as desktop-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DJ Vandesande Portfolio Website</title>
+    <link rel="shortcut icon" type="image/png" href="img/astronaut_icon.png"/>
+
+    <!-- normalizes bugs between mobile vs desktop browsers-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <!-- icons/brands-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+    <!-- css link-->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<header>
+    <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+    </button>
+    <nav class="nav">
+        <ul class="nav__list">
+            <!-- website sections -->
+            <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+            <li class="nav__item"><a href="index.html#experiences" class="nav__link">Work Experience</a></li>
+            <li class="nav__item"><a href="index.html#about" class="nav__link">About Me</a></li>
+            <li class="nav__item"><a href="index.html#art" class="nav__link">My Artworks</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- introduction with classes for styling and id for anchoring-->
+<section class="intro">
+    <!-- double hyphen indicated modifier class-->
+    <div class="section__title section__title--intro">
+        <h1><strong> Oils and </h1> 
+        <h1>Watercolours</strong></h1>
+    </div>
+    <p class="section__subtitle section__subtitle--intro"> killing fish! </p>
+    <img src="img/tattoo.png" alt="project" class = "intro__img">
+</section>
+
+<!-- introduction with classes for styling and id for anchoring-->
+<section class="carousel-section">
+
+    <div class="carousel">
+        <div class="carousel__container">
+
+            <div class="carousel__slide">
+                <div class="carousel__frame">
+                    <img src="img/blue.jpg" alt="Artwork 1">
+                    <div class="carousel__caption">2023</div>
+                </div>
+            </div>
+            <div class="carousel__slide">
+                <div class="carousel__frame">
+                    <img src="img/green.png" alt="Artwork 3">
+                    <div class="carousel__caption">2024</div>
+                </div>
+            </div>
+            <div class="carousel__slide">
+                <div class="carousel__frame">
+                    <img src="img/bird.png" alt="Artwork 3">
+                    <div class="carousel__caption">2024</div>
+                </div>
+            </div>
+            <div class="carousel__slide">
+                <div class="carousel__frame">
+                    <img src="img/pink.png" alt="Artwork 1">
+                    <div class="carousel__caption">2021</div>
+                </div>
+            </div>
+            <div class="carousel__slide">
+                <div class="carousel__frame">
+                    <img src="img/purple.jpg" alt="Artwork 2">
+                    <div class="carousel__caption">2022</div>
+                </div>
+            </div>
+            <div class="carousel__slide">
+                <div class="carousel__frame">
+                    <img src="img/tattoo.png" alt="Artwork 1">
+                    <div class="carousel__caption">2024</div>
+                </div>
+            </div>
+            <!-- Add more slides as needed -->
+        </div>
+        <button class="carousel__button carousel__button--left" aria-label="Previous slide">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="carousel__button carousel__button--right" aria-label="Next slide">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+
+        <div class="carousel__indicators">
+            <span class="carousel__indicator" data-slide="0"></span>
+            <span class="carousel__indicator" data-slide="1"></span>
+            <span class="carousel__indicator" data-slide="2"></span>
+            <span class="carousel__indicator" data-slide="3"></span>
+            <!-- Add more indicators as needed -->
+        </div>
+    </div>
+</section>
+
+
+<!-- Footer-->
+<footer class="footer">
+    <a href="https://www.instagram.com/leonardo.da.vandes/?hl=en" class="footer__link">@leonardo.da.vandes</a>
+    <ul class="social-list">
+        <li class="social-list__item">
+            <a class="social-list__link" href="mailto:20djv2@queensu.ca">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </li>
+        <li class="social-list__item">
+            <a class="social-list__link" href="https://www.linkedin.com/in/dj-vandesande/">
+                <i class="fab fa-brands fa-linkedin"></i>
+            </a>
+        </li>
+        <li class="social-list__item">
+            <a class="social-list__link" href="https://github.com/djVandes">
+                <i class="fab fa-brands fa-github"></i>
+            </a>
+        </li>
+    </ul>
+</footer>
+
+<script src="js/index.js"></script>
+
+
+</body>
+</html>
+
+

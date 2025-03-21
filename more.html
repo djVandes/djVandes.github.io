@@ -2,18 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- ensures it works on mobile aswell as desktop-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hardware nerd stuff</title>
+    <title>more</title>
     <link rel="shortcut icon" type="image/png" href="img/astronaut_icon.png"/>
 
-    <!-- Normalize CSS for consistent styling across browsers -->
+    <!-- normalizes bugs between mobile vs desktop browsers-->
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-    <!-- Font Awesome for icons -->
+    
+    <!-- icons/brands-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <!-- Google Fonts -->
+
+    <!-- fonts-->
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
-    <!-- Custom CSS -->
+    <!-- css link-->
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
 <header>
@@ -22,6 +28,7 @@
     </button>
     <nav class="nav">
         <ul class="nav__list">
+            <!-- website sections -->
             <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
             <li class="nav__item"><a href="index.html#experiences" class="nav__link">Work Experience</a></li>
             <li class="nav__item"><a href="index.html#about" class="nav__link">About Me</a></li>
@@ -30,15 +37,45 @@
     </nav>
 </header>
 
-<!-- Work Experience Details -->
-<section class="experience-details">
-    <h1 class="experience-title">ASIC Design Engineering</h1>
-    <h2 class="experience-subtitle">Marvell Semiconductors</h2>
-    <img src="[Image URL]" alt="[Role Title]" class="experience-image">
-    <p class="experience-description">
-        [Description of the role]
-    </p>
+<!-- introduction with classes for styling and id for anchoring-->
+<section class="intro">
+    <!-- double hyphen indicated modifier class-->
+    <div class="section__title section__title--intro">
+        <h1><strong>Other Works</strong></h1>
+    </div>
+    <p class="section__subtitle section__subtitle--intro">Woodburnings to Lino Carvings</p>
+    <img src="img/eagle.png" alt="project" class = "intro__img">
 </section>
+
+<!-- My Works -->
+<section class = "watercolours" id="w_art">
+    <div class = "subpage">
+        <a class="subpage__item">
+            <img src="img/deer.png" alt="birds eye" class="subpage__img">
+        </a>
+        <a class="subpage__item">
+            <img src="img/mouth.png" alt="keep em guessing" class="subpage__img">
+        </a>
+        <a class="subpage__item">
+            <img src="img/eagle.png" alt="dipshit" class="subpage__img">
+        </a>
+        <a class="subpage__item">
+            <img src="img/lino.png" alt="keep em guessing" class="subpage__img">
+        </a>   
+        <a class="subpage__item">
+            <img src="img/chicks.png" alt="straddle me" class="subpage__img">
+        </a>
+        <a class="subpage__item">
+            <img src="img/astro.png" alt="keep em guessing" class="subpage__img">
+        </a>   
+
+    </div>
+    <div style="text-align: center; padding-top: 100px;">
+        <a href="index.html#art" class="btn">Main</a>
+    </div>
+
+</section>
+
 
 <!-- Footer -->
 <footer class="footer">

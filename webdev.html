@@ -37,42 +37,57 @@
     </nav>
 </header>
 
-<!-- introduction with classes for styling and id for anchoring-->
-<section class="intro">
-    <!-- double hyphen indicated modifier class-->
-    <div class="section__title section__title--intro">
-        <h1><strong>Graphite Works</strong></h1>
-    </div>
-    <p class="section__subtitle section__subtitle--intro">covid was long</p>
-    <img src="img/henning.jpg" alt="project" class = "intro__img">
+
+
+
+<!-- Work Experience Details -->
+<section class="experience-details">
+    <h1 class="experience-title">Web Dev Projects</h1>
 </section>
 
-<!-- My Works -->
-<section class = "watercolours" id="w_art">
-    <div class = "subpage">
-        <a class="subpage__item">
-            <img src="img/henning.jpg" alt="birds eye" class="subpage__img">
-        </a>
-        <a class="subpage__item">
-            <img src="img/ohboy.png" alt="dipshit" class="subpage__img">
-        </a>
-        <a class="subpage__item">
-            <img src="img/pretty.png" alt="straddle me" class="subpage__img">
-        </a>
-        <a class="subpage__item">
-            <img src="img/smoker.png" alt="keep em guessing" class="subpage__img">
-        </a>
-        <a class="subpage__item">
-            <img src="img/stoner.png" alt="keep em guessing" class="subpage__img">
-        </a>      
-        <a class="subpage__item">
-            <img src="img/eros.jpg" alt="keep em guessing" class="subpage__img">
-        </a>        
 
+<!-- work experience -->
+<section class="work-experience" id="experiences">
+    <h2 class="section__title section__title--experiences"></h2>
+    <div class="experiences">
+        
+        <a class="experience">
+            <img src="img/chap.png" alt="AI Exploration" class="experience__logo">
+            <div class="experience__details">
+                <h3>DIVA - Debugging aI Verilog Agents</h3>
+                <p>Designing and debugging Verilog RTL Cryptographic algorithms using a system of interacting LM agents locally hosted on LMStudio. 
+                    Debugging process compares outputs problem solutions from Ollama, Deepseek, and Claude to rank and 
+                    implement highest ranked solution.</p>
+                <p>Presenting the project proposal at the 2025 RENEW Conference in Boston, MA in April!</p>
+            </div>
+        </a>
+        <a class="experience">
+            <img src="img/marvell.png" alt="Marvell Semiconductors" class="experience__logo">
+            <div class="experience__details">
+                <h3>UGLIER - UVM Guideline Linter Extended Ruleset</h3>
+                <p>Using LMs hosted on AWS to generate Verilog linting rulesets. Project included regex generation, debugging, 
+                    and command implementation to expand upon current lint guidelines. </p>
+            </div>
+        </a>
+        <a class="experience">
+            <img src="img/droneco.jpg" alt="Maintenance Drone Co." class="experience__logo">
+            <div class="experience__details">
+                <h3>Maintenance Drone Corporation AI Damage Detection</h3>
+                <p>Using AI Image Processing identify roof damage from drone shots we gathered of Community Housing.
+                    Projects include drone flights, annotating and testing training data, and debugging report generators.</p>
+            </div>
+        </a>
+        <a class="experience">
+            <img src="img/ghost.png" alt="Firefox Dev" class="experience__logo">
+            <div class="experience__details">
+                <h3>Ghost - Search History Obfuscator</h3>
+                <p>Developping a firefox extension to query random searches to obfuscate datacollection in response to ego searches and personally related prompts.
+                    Tasks include an AI random search generator, search history database for reference, and debugging the extension UI.
+                </p>
+            </div>
+        </a>
     </div>
-    <div style="text-align: center; padding-top: 100px;">
-        <a href="index.html#art" class="btn">Main</a>
-    </div>
+    <a href = "index.html#experiences" class = "btn">Main</a>
 </section>
 
 
