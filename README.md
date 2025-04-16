@@ -1,20 +1,14 @@
 # Portfolio Website
 
 ## Features 
-* Art Portfolio (subspages for each collection)
-* Carousel of photos
-* About Me
-* Work experience
-* Astronout icon cmon look at that astronaut icon
-
+* Engineering projects
+* About Me Section
+* Art Portfolio with subspages for each collection
 
 ## Future Add ons
-* day/night mode
-* rsa/sha breakdown minigames
-* work experience subpages
+* Center the fucking art images
+* Commission prices and print prices
 
-## Bugs (im just a man)
-* Subpage drop down menus
-* Footer links
 
 > Grant! Grant look I made a website
+
