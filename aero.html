@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <!-- ensures it works on mobile aswell as desktop-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pencils</title>
+    <title>aero_eng</title>
     <link rel="shortcut icon" type="image/png" href="img/astronaut_icon.png"/>
 
     <!-- normalizes bugs between mobile vs desktop browsers-->
@@ -38,51 +38,71 @@
 </header>
 
 
-
-<!-- Work Experience Details -->
-<section class="experience-details">
-    <h1 class="experience-title">Aerospace Projects</h1>
+<!-- introduction with classes for styling and id for anchoring-->
+<section class="intro">
+    <!-- double hyphen indicated modifier class-->
+    <div class="section__title--intro">
+        <h1><strong> Aerospace </strong> Projects</h1>
+    </div>
+    <p class="section__subtitle section__subtitle--intro"><strong>In QRET and Queens</strong></p>
+    <img src="img/launch.jpg" alt="project" class = "intro__img">
 </section>
+
+<!-- Mission Patches -->
+<section class = "patch">
+    <h2 class="section__title">Patches and Launches</h2>
+    <p class = "section__subtitle"> 2023, '24, and '25 Patches I Designed for QRET and some launches I participated in with the club! </p>
+    <div class = "patches">
+        <a class="patch_item">
+            <img src="img/patch/calamari.png" alt="2023" class="patch__img">
+        </a>
+        <a class="patch_item">
+            <img src="img/patch/bessie.png" alt="2024" class="patch__img">
+        </a>
+        <a class="patch_item">
+            <img src="img/patch/honey.png" alt="2025" class="patch__img">
+        </a>
+    </div>
+
+    <div class="video-container-dark">  <!-- added container for dark background -->
+        <video class="launch__vid" poster="img/launch_poster.png" controls onclick="this.paused ? this.play() : this.pause();">
+            <source src="img/launch.MP4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <video class="launch__vid" poster="img/dl_poster.png" controls onclick="this.paused ? this.play() : this.pause();">
+            <source src="img/dani_launch.MP4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</section>
+
 
 
 <!-- work experience -->
 <section class="work-experience" id="experiences">
-    <h2 class="section__title section__title--experiences"></h2>
+    <h2 class="section__title section__title--experiences">Aerospace Projects</h2>
     <div class="experiences">
         
         <a class="experience">
-            <img src="img/chap.png" alt="AI Exploration" class="experience__logo">
+            <img src="img/rover.png" alt="Rover" class="experience__logo">
             <div class="experience__details">
-                <h3>DIVA - Debugging aI Verilog Agents</h3>
-                <p>Designing and debugging Verilog RTL Cryptographic algorithms using a system of interacting LM agents locally hosted on LMStudio. 
-                    Debugging process compares outputs problem solutions from Ollama, Deepseek, and Claude to rank and 
-                    implement highest ranked solution.</p>
-                <p>Presenting the project proposal at the 2025 RENEW Conference in Boston, MA in April!</p>
+                <h3>Lunar Rover Solar Panel Deployment</h3>
+                <p>Designed a creative solution for a deployable solar panel on a lunar rover using compliant mechanisms, artificial muscles, and shape memory alloys in a simulated lunar environment.</p>
+                <p>Presented the final project ssolution to the Canadian Space Agency</p>
             </div>
         </a>
         <a class="experience">
-            <img src="img/marvell.png" alt="Marvell Semiconductors" class="experience__logo">
+            <img src="img/nasa.png" alt="QHERC" class="experience__logo">
             <div class="experience__details">
-                <h3>UGLIER - UVM Guideline Linter Extended Ruleset</h3>
-                <p>Using LMs hosted on AWS to generate Verilog linting rulesets. Project included regex generation, debugging, 
-                    and command implementation to expand upon current lint guidelines. </p>
+                <h3>Human Exploration Rover Competition </h3>
+                <p>Lead outreach coordination fostering interest in Aerospace with the 2025 Queen’s HERC, designing a human-powered rover for NASA’s annual competition as the only Canadian team. </p>
             </div>
         </a>
         <a class="experience">
-            <img src="img/droneco.jpg" alt="Maintenance Drone Co." class="experience__logo">
+            <img src="img/rocketlogo.png" alt="NextProject." class="experience__logo">
             <div class="experience__details">
-                <h3>Maintenance Drone Corporation AI Damage Detection</h3>
-                <p>Using AI Image Processing identify roof damage from drone shots we gathered of Community Housing.
-                    Projects include drone flights, annotating and testing training data, and debugging report generators.</p>
-            </div>
-        </a>
-        <a class="experience">
-            <img src="img/ghost.png" alt="Firefox Dev" class="experience__logo">
-            <div class="experience__details">
-                <h3>Ghost - Search History Obfuscator</h3>
-                <p>Developping a firefox extension to query random searches to obfuscate datacollection in response to ego searches and personally related prompts.
-                    Tasks include an AI random search generator, search history database for reference, and debugging the extension UI.
-                </p>
+                <h3>Model Rocket Design and Launch</h3>
+                <p>It's fun. And big. And goes fshooo.</p>
             </div>
         </a>
     </div>

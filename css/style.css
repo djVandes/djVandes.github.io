@@ -488,6 +488,7 @@ header {
     background-color: var(--clr-lt);
     color: var(--clr-drk);
     text-align: center;
+    align-items: center; /* Center the experiences horizontally */
 }
 
 .portfolio {
@@ -552,7 +553,6 @@ header {
 .portfolio__item:focus .portfolio__img {
     transform: scale(1.3);
     opacity: 0.5;
-
 }
 
 /* Individual portfolio item styles */
@@ -569,207 +569,120 @@ header {
     margin-right: auto;
 }
 
-
-/************/
-/* CAROUSEL */
-/************/
-
-.carousel {
-    position: relative;
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-.carousel-section {
-    background: linear-gradient(to bottom, var(--clr-drk), rgb(15, 9, 26));
-    padding: 2em 0;
-    color: var(--clr-lt);
-    text-align: center;
-
-}
-
-.carousel__container {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.carousel__slide {
-    min-width: 100%;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-.carousel__frame {
-    background-color: var(--clr-lt);
-    width: 80%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid var(--clr-lt);
-    border-radius: 10px;
-    box-shadow: var(--bs);
-    position: relative;
-    overflow: hidden;
-}
-
-.carousel__frame img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain; /* Maintain aspect ratio */
-    display: block;
-    transition: transform 0.3s ease;
-
-}
-
-.carousel__frame:hover img {
-    transform: scale(1.05);
-}
-
-.carousel__caption {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: rgba(0, 0, 0, 0.5);
-    color: var(--clr-lt);
-    padding: 0.5em 1em;
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-.carousel__button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.5);
-    border: none;
-    color: white;
-    padding: 1em;
-    cursor: pointer;
-    z-index: 2;
-    font-size: 2rem;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: background 0.3s ease;
-}
-
-.carousel__button:hover {
-    background: rgba(0, 0, 0, 0.8); /* Darken background on hover */
-}
-
-.carousel__button--left {
-    left: 10px; /* Adjust position */
-}
-
-.carousel__button--right {
-    right: 10px; /* Adjust position */
-}
-
-.carousel__indicators {
-    display: flex;
-    justify-content: center;
-    margin-top: 1em;
-}
-
-.carousel__indicator {
-    width: 10px;
-    height: 10px;
-    background: var(--clr-lt);
-    border-radius: 50%;
-    margin: 0 5px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-    border: 2px solid var(--clr-drk); /* Add border around indicators */
-
-}
-
-.carousel__indicator.active {
-    background: var(--clr-accent);
-}
-
-.carousel-section h3 {
-    text-align: center;
-    color: var(--clr-lt); /* Optional: Adjust text color for better contrast */
-    padding-bottom: 5 em;
-
-}
-
-/***********/
-/* SUBPAGE */
-/***********/
-
-.artwork {
-    background-color: var(--clr-lt);
-    color: var(--clr-drk);
-    text-align: center;
-}
+/***************/
+/* ART SUBPAGE */
+/***************/
 
 .subpage {
-    padding-top: 1.5em;
+
+    align-items: center; 
+    justify-content: center; 
     display: grid;
-    flex-wrap: wrap; /* Allow items to wrap within the container */
-    align-items: center; /* Center the experiences horizontally */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-
-.subpage__item {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-
-    transition: 300ms ease-in-out;
-    min-width: 200px; /* Adjust the size as needed */
-    max-width: 400px; /* Adjust the size as needed */
-}
-
-.subpage__item::before {
-    content: attr(data-text);
-    position: absolute;
-    transform: translate(-50%, -50%);
-    z-index: 3;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
 }
 
 .subpage__img {
+    align-items: center; /* Center the experiences horizontally */
+    justify-content: center; /* Center the content within each experience item */
+
     transition: transform 750ms ease-in-out;
     max-width: calc(100% - 20px); /* Adjust max-width to account for padding */
     max-height: calc(100% - 20px); /* Adjust max-height to account for padding */
 }
-
-.subpage__item:hover .subpage__img,
-.subpage__item:focus .subpage__img {
+.subpage__img:hover{
     transform: scale(2);
     opacity: 1;
     border-radius: 0px; /* Remove rounded corners */
     z-index: 3;
 }
 
-.subpage.btn {
-    align-items: center;
-    display: inline-block;
-    padding: .5em 1.5em;
-    background: var(--clr-accent);
-    color: var(--clr-lt);
-    text-decoration: none;
-    cursor: pointer;
-    font-size: 1.25rem;
-    text-transform: uppercase;
-    letter-spacing: 2.5px;
-    font-weight: var(--fw-bold);
-    transition: transform 300ms ease-in-out;
+
+/*************/
+/* AEROSPACE */
+/*************/
+
+.patch {
+
+    text-align: center;
+    align-items: center; /* Center the experiences horizontally */
+    justify-content: center; /* Center the content within each experience item */
+}
+.section__title--patch {
+    grid-area: title;
+    padding-left: 1em; /* Add padding to the left of the body paragraph */
 
 }
+
+.section__subtitle--patch {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    position: relative;
+    left: -1em;
+    width: calc(100% + 2em);
+    padding-left: 1em;
+    padding-right: calc(200px + 4em);
+
+}
+
+.patches {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap within the container */
+    gap: 1.5em; /* Add space between each experience item */
+    align-items: center; /* Center the experiences horizontally */
+    justify-content: center; /* Center the content within each experience item */
+
+    display: grid;
+    flex-wrap: wrap; /* Allow items to wrap within the container */
+    align-items: center; /* Center the experiences horizontally */
+    gap: 18px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    background: linear-gradient(to top, var(--clr-drk), var(--clr-accent));
+
+}
+
+.patch__img {
+    transition: transform 750ms ease-in-out;
+    max-width: calc(100% - 20px); /* Adjust max-width to account for padding */
+    max-height: calc(100% - 20px); /* Adjust max-height to account for padding */
+}
+
+.patch__img:hover {
+    transform: scale(1.5);
+    opacity: 1;
+    border-radius: 0px; /* Remove rounded corners */
+    z-index: 3;
+}
+
+.launch__vid {
+    grid-area: img;
+    max-height: 600px;
+    padding-top: 2em; /* Add padding to the left of the body paragraph */
+
+    padding-left: 2.5em; /* Add padding to the left of the body paragraph */
+
+    padding-right: 2.5em; /* Add padding to the left of the body paragraph */
+    z-index: 2;
+    flex-wrap: wrap; /* Allow items to wrap within the container */
+    align-items: center; /* Center the experiences horizontally */
+    gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    transition: transform 750ms ease-in-out;
+
+}
+
+.launch__vid:hover {
+    transform: scale(1.5);
+    opacity: 1;
+    border-radius: 0px; /* Remove rounded corners */
+    z-index: 3;
+}
+
+.video-container-dark {
+    background: linear-gradient(to bottom, var(--clr-drk), rgb(15, 9, 26));
+    padding: 1rem;           /* optional: add spacing around the videos */
+}
+
+
 
 /**********/
 /* FOOTER */
