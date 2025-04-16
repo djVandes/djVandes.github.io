@@ -1,8 +1,6 @@
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
@@ -108,7 +106,6 @@ strong { font-weight: var(--fw-bold) }
     letter-spacing: 2.5px;
     font-weight: var(--fw-bold);
     transition: transform 300ms ease-in-out;
-
 }
 
 .btn:hover {
@@ -356,6 +353,7 @@ header {
     margin: 0.5em auto 0.5em;
     background: var(--clr-drk);
     opacity: 0.25;
+
 }
 
 .experiences {
@@ -365,7 +363,6 @@ header {
     gap: 1.5em; /* Add space between each experience item */
     align-items: center; /* Center the experiences horizontally */
     justify-content: center; /* Center the content within each experience item */
-
 }
 
 .experience {
@@ -383,14 +380,17 @@ header {
     min-width: 400px; /* Adjust the size as needed */
     position: relative;
     margin-bottom: 20px; /* Space between boxes */
+    text-decoration: none;
+
 }
 
 .experience:hover {
     transform: scale(1.05); /* Slightly enlarge on hover */
+    text-decoration: underline;
+
 }
 
 .experience__logo {
-    
     width: 100px; /* Adjust the size as needed */
     height: auto;
     margin-right: 15px; /* Space between the logo and the text */
@@ -690,9 +690,9 @@ header {
 
 .footer {
     background: rgb(15, 9, 26);
-    color: rgb(191, 190, 193);
+    color: #950e32;
     text-align: center;
-    padding: 2.5em 0;
+    padding: 2em 0;
     font-size: var(--fs-h3);
 
 }
@@ -708,11 +708,11 @@ header {
 
 .footer__link:hover,
 .social-list__link:hover {
-    opacity: .7;
+    color: rgb(191, 190, 193);
 }
 
 .footer__link:hover {
-    color: var(--clr-lt);
+    color: rgb(191, 190, 193);
     text-decoration: underline;
 }
 
@@ -720,20 +720,14 @@ header {
     list-style: none;
     display: flex;
     justify-content: center;
-
-
-    margin: 1em 0 0;
-    padding: 0;
 }
-
 
 .social-list__item {
     margin: 0.5em;
 }
 
 .social-list__link {
-    color: var(--clr-lt);
-    padding: 0em;
+    color: rgb(191, 190, 193);
 }
 
 
