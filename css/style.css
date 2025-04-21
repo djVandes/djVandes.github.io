@@ -184,7 +184,7 @@ header {
     display: flex;
     height: 100%;
     flex-direction: column;
-    justify-content: space-evenly; /* toggling flex display*/
+    justify-content: flex-start; /* toggling flex display*/
     align-items: left;
     padding: 5 10em; /*padding for the list*/
 }
@@ -212,7 +212,7 @@ header {
 }
 
 .nav-open .nav{
-    transform: translateX(40%);
+    transform: translateX(60%);
 }
 
 .nav-open .nav-toggle{
@@ -265,12 +265,12 @@ header {
 /*********/
 
 .shop {
+    padding: 4em;
     background: linear-gradient(to bottom, var(--clr-drk), rgb(15, 9, 26));
     color: var(--clr-lt);
     text-align: center;
     align-items: center; /* Center the experiences horizontally */
     justify-content: center; /* Center the content within each experience item */
-
 }
 
 .shop p {
@@ -484,6 +484,13 @@ header {
     opacity: 1;
     font-weight: var(--fw-reg)
 
+}
+
+.diva__img {
+    display: block;
+    margin: 0 auto;       /* centers the image */
+    padding: 0 1em;       /* adds padding to left and right */
+    max-width: 100%;      /* ensures responsiveness */
 }
 
 @media (min-width: 800px) {
