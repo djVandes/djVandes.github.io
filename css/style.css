@@ -282,7 +282,7 @@ header {
     grid-gap: 1.5em;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     margin: 1em auto;
-    padding: 5em 2em 20em; /* 1em padding left/right and 20em padding bottom */
+    padding: 5em 2em 5em; /* 1em padding left/right and 20em padding bottom */
 }
 
 /* Container for each print item */
