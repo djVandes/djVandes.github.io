@@ -6,9 +6,9 @@
 
 :root {
 
-    --ff-primary: 'Poppins', sans-serif; /* Add the new modern font */
+    --ff-primary: 'Poppins', sans-serif; 
     --ff-secondary: 'Source Code Pro', monospace;
-    --ff-modern: 'Poppins', sans-serif; /* Add the new modern font */
+    --ff-modern: 'Poppins', sans-serif; 
 
     --fw-reg: 600;
     --fw-bold: 900;
@@ -25,7 +25,7 @@
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
-    --fs-body: 2rem;
+    --fs-body: 1rem;
 
     /*BOX SHADOWS*/
     --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
@@ -146,7 +146,7 @@ h3 { font-size: var(--fs-h3) }
 .section__subtitle--about {
     background: var(--clr-accent-light);
     padding: .25em 1em;
-    font-family: var(--ff-secondary);
+    font-family: var(--ff-primary);
     color: var(--clr-drk);
 
     margin-bottom: 1em;
@@ -402,18 +402,20 @@ header {
     margin-top: 0;
     color: var(--clr-accent); /* Accent color for headings */
     opacity: 1;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
 }
+.experience h4 {
+    font-size: 1.75rem;
+    margin-top: 0;
+    margin-bottom: 0;
 
-.experience__details {
-    display: flex;
-    flex-direction: column;
-    flex: 1; /* Allow the details to take up the remaining space */
-    min-width: 0; /* Prevent overflow */
+    color: var(--clr-drk); /* Accent color for headings */
+    opacity: 1;
 }
 
 .experience p {
     color: var(--clr-drk); /* Dark color for text */
+    margin-top: 0rem;;
     opacity: 1;
     font-weight: var(--fw-reg)
 
@@ -422,14 +424,12 @@ header {
 @media (min-width: 800px) {
     .experiences {
         display: flex;
+        align-items: center;
         max-width: 1000px;
         margin-left: auto;
         margin-right: auto;
     }
 
-    .experience + .experience {
-        margin-left: 2em;
-    }
 }
 
 
