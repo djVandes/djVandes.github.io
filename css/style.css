@@ -95,7 +95,7 @@ strong { font-weight: var(--fw-bold) }
 .btn {
     align-items: center;
     display: inline-block;
-    padding: .5em 1.5em;
+    padding: .5em 1em;
     background: var(--clr-accent);
     color: var(--clr-lt);
     text-decoration: none;
@@ -261,6 +261,76 @@ header {
 .hamburger::after { bottom: 8px; }
 
 /*********/
+/* SHOP */
+/*********/
+
+.shop {
+    background: linear-gradient(to bottom, var(--clr-drk), rgb(15, 9, 26));
+    color: var(--clr-lt);
+    text-align: center;
+    align-items: center; /* Center the experiences horizontally */
+    justify-content: center; /* Center the content within each experience item */
+
+}
+
+.shop p {
+    margin-bottom: 1em;
+}
+
+.prints-grid {
+    display: grid;
+    grid-gap: 1.5em;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    margin: 1em auto;
+    padding: 5em 2em 20em; /* 1em padding left/right and 20em padding bottom */
+}
+
+/* Container for each print item */
+.print__img-container {
+    min-height: 300px;               /* Set a convenient width */
+    margin: 1em auto;           /* Center the container with spacing */
+    text-align: center;
+    transition: transform 300ms ease-in-out;
+
+}
+.print__img-container:hover {
+    transform: scale(1.5);
+}
+
+/* Style for the print image */
+.print__img {
+    max-height: 500px;               /* Set a convenient width */
+    width: 100%;                /* Fit within container */
+    height: auto;
+    box-shadow: var(--bs);
+    border-radius: 5px;         /* Optional: rounded corners */
+}
+
+/* Container for text details under the image */
+.print__details {
+    margin-top: 0.5em;
+    font-size: 0.9rem;
+    color: var(--clr-lt);
+    line-height: 1.4;
+}
+
+/* Individual text elements */
+.print__title {
+    font-weight: bold;
+    margin-bottom: 0.2em;
+}
+
+.print__price,
+.print__sizing,
+.print__description {
+    display: block;
+    color: var(--clr-lt);
+    margin-bottom: 0.2em;
+}
+
+
+
+/*********/
 /* INTRO */
 /*********/
 
@@ -383,7 +453,6 @@ header {
 .experience:hover {
     transform: scale(1.05); /* Slightly enlarge on hover */
     text-decoration: underline;
-
 }
 
 .experience__logo {
@@ -603,6 +672,9 @@ header {
     align-items: center; /* Center the experiences horizontally */
     justify-content: center; /* Center the content within each experience item */
 }
+.patch p{
+    margin-bottom: 1em; /* Add space between paragraphs */
+}
 .section__title--patch {
     grid-area: title;
     padding-left: 1em; /* Add padding to the left of the body paragraph */
@@ -643,7 +715,7 @@ header {
 }
 
 .patch__img:hover {
-    transform: scale(1.5);
+    transform: scale(1.25);
     opacity: 1;
     border-radius: 0px; /* Remove rounded corners */
     z-index: 3;
