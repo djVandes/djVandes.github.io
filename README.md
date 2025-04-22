@@ -7,4 +7,3 @@
 * Art subpages
 
 > Grant! Grant look I made a website
-

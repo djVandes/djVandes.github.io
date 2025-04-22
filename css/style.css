@@ -192,7 +192,7 @@ header {
 .nav__link {
     color: var(--clr-drk);
     font-weight: var(--fw-bold);
-    font-size: var(--fs-h2);
+    font-size: 2rem;
     text-decoration: none;
 }
 
@@ -212,13 +212,12 @@ header {
 }
 
 .nav-open .nav{
-    transform: translateX(60%);
+    transform: translateX(40%);
 }
 
 .nav-open .nav-toggle{
     position: fixed;
 }
-
 
 .nav-open .hamburger{
     transform: rotate(.625turn);
@@ -287,7 +286,6 @@ header {
 
 /* Container for each print item */
 .print__img-container {
-    min-height: 300px;               /* Set a convenient width */
     margin: 1em auto;           /* Center the container with spacing */
     text-align: center;
     transition: transform 500ms ease-in-out;
