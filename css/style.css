@@ -317,7 +317,7 @@ header {
     margin: 1em auto;
     max-width: calc(100% - 20px); /* Adjust max-width to account for padding */
     max-height: calc(100% - 20px); /* Adjust max-height to account for padding */
-    padding: 5em 2em 5em; /* 1em padding left/right and 20em padding bottom */
+    padding: 5em 2em 0em; /* 1em padding left/right and 20em padding bottom */
 }
 
 /* Container for each print item */
@@ -360,8 +360,6 @@ header {
     color: var(--clr-lt);
     margin-bottom: 0.2em;
 }
-
-
 
 /*********/
 /* INTRO */
@@ -422,7 +420,6 @@ header {
         width: calc(100% + 1.5em);
     }
 
-
     .intro__blurb {
         grid-area: blurb;
         text-align: left;
@@ -482,7 +479,6 @@ header {
     position: relative;
     margin-bottom: 20px; /* Space between boxes */
     text-decoration: none;
-
 }
 
 .experience:hover {
@@ -518,7 +514,6 @@ header {
     margin-top: 0rem;;
     opacity: 1;
     font-weight: var(--fw-reg)
-
 }
 
 .diva__img {
@@ -536,7 +531,6 @@ header {
         margin-left: auto;
         margin-right: auto;
     }
-
 }
 
 /************/
@@ -580,7 +574,6 @@ header {
     transition: opacity 300ms ease-in-out;
     pointer-events: none; /* Ensure the text does not interfere with hover */
     z-index: 3;
-
 }
 
 .portfolio__item:hover::before {
@@ -612,10 +605,13 @@ header {
 /* ART SUBPAGE */
 /***************/
 
+
 .subpage {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center; 
     justify-content: center; 
+    gap: 1.5em;
     grid-template-columns: repeat(auto-fit, minmax(300px, 2rem)); 
 }
 
@@ -637,6 +633,48 @@ header {
     border-radius: 0;
     z-index: 3;
 }
+
+/* Center and slightly reduce font size for art-section and its children */
+.art-section {
+    text-align: center;
+    margin: 0 auto 3em auto;
+    max-width: 900px;
+}
+
+.art-section__title {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    padding: 0.25em 1.5em;
+    background: var(--clr-accent-light);
+    /* Remove border-radius for square edges */
+    border-radius: 0;
+    color: var(--clr-navy);
+    margin-bottom: 1em;
+    font-size: 1.5rem;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    animation: slideInFromRight 1s ease-out forwards;
+}
+
+.art-section__subtitle {
+    margin: 0;
+    font-size: var(--fs-h3);
+}
+
+.art-section {
+    margin-top: 3em;
+}
+
+@media (max-width: 700px) {
+    .art-section {
+        max-width: 98vw;
+    }
+    .subpage__img {
+        max-width: 95vw;
+        height: auto;
+    }
+}
+
 
 /*************/
 /* AEROSPACE */
@@ -817,5 +855,6 @@ header {
 .artwork__subtitle--clr-lt {
     color: var(--clr-lt) !important;
 }
+
 
 
