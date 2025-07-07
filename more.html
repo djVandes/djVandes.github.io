@@ -51,18 +51,27 @@
 <!-- My Works -->
 <section class = "watercolours" id="w_art">
     <div class = "subpage">
-        <img src="img/deer.png" alt="birds eye" class="subpage__img">
-        <img src="img/mouth.png" alt="keep em guessing" class="subpage__img">
-        <img src="img/eagle.png" alt="dipshit" class="subpage__img">
-        <img src="img/lino.png" alt="keep em guessing" class="subpage__img">
-        <img src="img/chicks.png" alt="straddle me" class="subpage__img">
-        <img src="img/astro.png" alt="keep em guessing" class="subpage__img">
+        <img src="img/deer.png" alt="Deer" class="subpage__img" data-description="Woodburning, 2023">
+        <img src="img/mouth.png" alt="Open up and say AHHHHHH" class="subpage__img" data-description="Acrylic on a scateboard, 2024">
+        <img src="img/eagle.png" alt="Eagle" class="subpage__img" data-description="Woodburning, 2022">
+        <img src="img/lino.png" alt="Meth Wax" class="subpage__img" data-description="Lino carved stamp, 2024">
+        <img src="img/chicks.png" alt="Chickadees" class="subpage__img" data-description="Woodburning, 2022">
+        <img src="img/astro.png" alt="Astronaut" class="subpage__img" data-description="Woodburning, 2022">
     </div>
     <div style="text-align: center; padding-top: 100px;">
         <a href="index.html#art" class="btn">Main</a>
     </div>
 </section>
 
+<!-- Simple Modal for image closeup -->
+<div id="imgModal" style="display:none;position:fixed;z-index:1000;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.90);align-items:center;justify-content:center;transition:opacity 0.3s;opacity:0;">
+  <div id="imgModalContent" style="position:relative;background:none;padding:20px 20px 10px 20px;border-radius:10px;max-width:90vw;max-height:90vh;text-align:center;transform:scale(0.95);transition:transform 0.3s,opacity 0.3s;opacity:0;">
+    <button id="closeModalBtn" style="position:absolute;top:10px;right:15px;background:none;border:none;color:#fff;font-size:2em;cursor:pointer;">&times;</button>
+    <img id="modalImg" src="" alt="Artwork" style="max-width:80vw;max-height:60vh;border-radius:8px;display:block;margin:0 auto 15px auto;">
+    <div id="modalAlt" style="color:#fff;font-size:1.1em;font-weight:bold;margin-bottom:8px;"></div>
+    <div id="modalDesc" style="color:#fff;font-size:1em;"></div>
+  </div>
+</div>
 
 <!-- Footer -->
 <footer class="footer">
@@ -87,5 +96,6 @@
 </footer>
 
 <script src="js/index.js"></script>
+<script src="js/art-modal.js"></script>
 </body>
 </html>

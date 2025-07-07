@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
     
     <!-- icons/brands-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" >
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <!-- fonts-->
@@ -51,21 +51,20 @@
 <!-- My Works -->
 <section class = "watercolours" id="w_art">
     <div class = "subpage">
-        <img src="img/boxer.jpg" alt="boxer" class="subpage__img">        
-        <img src="img/bird.png" alt="birds eye" class="subpage__img">        
-        <img src="img/okayPunk.JPEG" alt="birds eye" class="subpage__img">        
-        <img src="img/orange.jpg" alt="dipshit" class="subpage__img">        
-        <img src="img/tattoo.png" alt="straddle me" class="subpage__img">        
-        <img src="img/haircut.png" alt="keep em guessing" class="subpage__img">        
-        <img src="img/flowers.png" alt="keep em guessing" class="subpage__img">        
-        <img src="img/fall.png" alt="keep em guessing" class="subpage__img">        
-        <img src="img/dancers.png" alt="keep em guessing" class="subpage__img">    
+        <img src="img/boxer.jpg" alt="Boxer" class="subpage__img" data-description="Gouache on paper, 2025">        
+        <img src="img/bird.png" alt="Birds Eye" class="subpage__img" data-description="Watercolour and Marker on paper, 2023">        
+        <img src="img/okayPunk.JPEG" alt="Okay Punk" class="subpage__img" data-description="Watercolour and Marker on paper, Retouched in '25">        
+        <img src="img/orange.png" alt="Untitled" class="subpage__img" data-description="Watercolour on paper, 2023">        
+        <img src="img/tattoo.png" alt="Nice Tat" class="subpage__img" data-description="Watercolour on paper, 2024">        
+        <img src="img/haircut.png" alt="keep em guessing" class="subpage__img" data-description="Watercolour on paper, 2024">        
+        <img src="img/flowers.png" alt="I'll keep the bouquet" class="subpage__img" data-description="Watercolour on paper, 2024">        
+        <img src="img/fall.png" alt="Icarus Falling" class="subpage__img" data-description="Watercolour on paper, 2023">        
+        <img src="img/dancers.png" alt="Skeletons" class="subpage__img" data-description="Watercolour on paper, 2021">    
     </div>
     <div style="text-align: center; padding-top: 100px;">
         <a href="index.html#art" class="btn">Main</a>
     </div>
 </section>
-
 
 <!-- Footer -->
 <footer class="footer">
@@ -89,6 +88,17 @@
     </ul>
 </footer>
 
+<!-- Simple Modal for image closeup -->
+<div id="imgModal" style="display:none;position:fixed;z-index:1000;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.90);align-items:center;justify-content:center;transition:opacity 0.3s;opacity:0;">
+  <div id="imgModalContent" style="position:relative;background:none;padding:20px 20px 10px 20px;border-radius:10px;max-width:90vw;max-height:90vh;text-align:center;transform:scale(0.95);transition:transform 0.3s,opacity 0.3s;opacity:0;">
+    <button id="closeModalBtn" style="position:absolute;top:10px;right:15px;background:none;border:none;color:#fff;font-size:2em;cursor:pointer;">&times;</button>
+    <img id="modalImg" src="" alt="Artwork" style="max-width:80vw;max-height:60vh;border-radius:8px;display:block;margin:0 auto 15px auto;">
+    <div id="modalAlt" style="color:#fff;font-size:1.1em;font-weight:bold;margin-bottom:8px;"></div>
+    <div id="modalDesc" style="color:#fff;font-size:1em;"></div>
+  </div>
+</div>
+
 <script src="js/index.js"></script>
+<script src="js/art-modal.js"></script>
 </body>
 </html>

@@ -51,23 +51,32 @@
 <!-- My Works -->
 <section class = "watercolours" id="w_art">
     <div class = "subpage">
-        <img src="img/flowerboy.jpg" alt="flower boy" class="subpage__img">
-        <img src="img/blue.jpg" alt="scubadiver" class="subpage__img">
-        <img src="img/green.png" alt="untitled" class="subpage__img">
-        <img src="img/pink.png" alt="hey girl!" class="subpage__img">
-        <img src="img/purple.jpg" alt="jupiter" class="subpage__img">
-        <img src="img/red.jpg" alt="tattoo" class="subpage__img">
-        <img src="img/teal.jpg" alt="keep em guessing" class="subpage__img">
-        <img src="img/inv.png" alt="keep em guessing" class="subpage__img">
-        <img src="img/emo.png" alt="dipshit" class="subpage__img">
-        <img src="img/teeth.jpg" alt="keep em guessing" class="subpage__img">
-        <img src="img/marigolds.jpg" alt="dipshit" class="subpage__img">
+        <img src="img/flowerboy.jpg" alt="Flower Boy" class="subpage__img" data-description="Oil on canvas, 2025">
+        <img src="img/blue.jpg" alt="Scubadiver" class="subpage__img" data-description="Acrylic on Canvas, 2022">
+        <img src="img/green.png" alt="Post Bender Clarity" class="subpage__img" data-description="Oil on Canvas, 2024">
+        <img src="img/pink.png" alt="hey girl!" class="subpage__img" data-description="Oil on Canvas, 2024">
+        <img src="img/purple.jpg" alt="Jupiter" class="subpage__img" data-description="Oil on Canvas, 2022">
+        <img src="img/red.jpg" alt="Untitled" class="subpage__img" data-description="Acrylic on Paper, 2021">
+        <img src="img/teal.jpg" alt="Untitled" class="subpage__img" data-description="Acrylic on Canvas, 2021">
+        <img src="img/inv.png" alt="Untitled" class="subpage__img" data-description="Acrylic on black paper. It was annoying. 2023">
+        <img src="img/emo.png" alt="Untitled" class="subpage__img" data-description="Acrylic on paper, 2022">
+        <img src="img/teeth.jpg" alt="keep em guessing" class="subpage__img" data-description="Acrylic on canvas, 2025">
+        <img src="img/marigolds.jpg" alt="Magnolias" class="subpage__img" data-description="Gouache on Paper, 2022">
     </div>
     <div style="text-align: center; padding-top: 100px;">
         <a href="index.html#art" class="btn">Main</a>
     </div>
 </section>
 
+<!-- Simple Modal for image closeup -->
+<div id="imgModal" style="display:none;position:fixed;z-index:1000;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.90);align-items:center;justify-content:center;transition:opacity 0.3s;opacity:0;">
+  <div id="imgModalContent" style="position:relative;background:none;padding:20px 20px 10px 20px;border-radius:10px;max-width:90vw;max-height:90vh;text-align:center;transform:scale(0.95);transition:transform 0.3s,opacity 0.3s;opacity:0;">
+    <button id="closeModalBtn" style="position:absolute;top:10px;right:15px;background:none;border:none;color:#fff;font-size:2em;cursor:pointer;">&times;</button>
+    <img id="modalImg" src="" alt="Artwork" style="max-width:80vw;max-height:60vh;border-radius:8px;display:block;margin:0 auto 15px auto;">
+    <div id="modalAlt" style="color:#fff;font-size:1.1em;font-weight:bold;margin-bottom:8px;"></div>
+    <div id="modalDesc" style="color:#fff;font-size:1em;"></div>
+  </div>
+</div>
 
 <!-- Footer -->
 <footer class="footer">
@@ -92,5 +101,6 @@
 </footer>
 
 <script src="js/index.js"></script>
+<script src="js/art-modal.js"></script>
 </body>
 </html>

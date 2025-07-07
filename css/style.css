@@ -539,7 +539,6 @@ header {
 
 }
 
-
 /************/
 /* ARTWORKS */
 /************/
@@ -622,23 +621,24 @@ header {
 
 .subpage__img {
     color: var(--clr-drk);
-    align-items: center; /* Center the experiences horizontally */
-    justify-content: center; /* Center the content within each experience item */
-    max-height: 500px;               /* Set a convenient width */
-    width: 100%;                /* Fit within container */
+    align-items: center;
+    justify-content: center;
+    height: 350px; /* Uniform height for all images */
+    width: auto;   /* Varying width, keeps aspect ratio */
+    object-fit: cover; /* Ensures image fills height, crops if needed */
     transition: transform 750ms ease-in-out;
-    border-radius: 5px;         /* Optional: rounded corners */
-    padding: .5em .5em .5em; /* 1em padding left/right and 20em padding bottom */
+    border-radius: 5px;
+    padding: .5em .5em .5em;
+    display: block;
+    margin: 0 auto;
 }
 .subpage__img:hover{
-    box-shadow: var(--bs);
     transform: scale(1.25);
     opacity: 1;
-    border-radius: 0px; /* Remove rounded corners */
+    border-radius: 0px;
     z-index: 3;
-    border-radius: 0px;         /* Optional: rounded corners */
+    border-radius: 0px;
 }
-
 
 /*************/
 /* AEROSPACE */
