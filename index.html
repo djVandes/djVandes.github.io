@@ -37,10 +37,10 @@
         </header>
         <section class="intro" id="home">
             <h1 class="section__title section__title--intro">
-                <strong> DJ Vandesande</strong> 
+                <strong> Danielle Vandesande</strong> 
             </h1>
             <p class="section__subtitle section__subtitle--intro"><strong>QU BaSC Candidate of Comp Eng</strong></p>
-            <p class="intro__blurb">Check out some old and current projects of mine in art and engineering</p>
+            <p class="intro__blurb">Hey there :)<br><br>Check out some old and current projects of mine in art and engineering</p>
             <img src="img/self.JPEG" alt="a picture of DJ Vandesande" class = "intro__img">
         </section>
 
@@ -49,6 +49,39 @@
             <p class = "section__subtitle section__subtitle">Interested in buying prints? Check out availability and pricing!</p>
             <a href = "prints.html" class = "btn">Print Shop</a>
         </section>
+
+        
+        <!-- About Me -->
+        <section class="about-me" id="about" style="position:relative;overflow:hidden;">
+            <div id="about-vanta-bg" style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:0;"></div>
+            <div class="about-me__content" style="position:relative;z-index:1;">
+                <div class="about-me__left">
+                    <p>In work and school I love exploring AI and cryptography and compression in chip design while iterning at Marvell Technology and Volunteering in IEEE.</p>
+                    <img src="img/pic_gallery/poster_pres.jpg" alt="RENEW Conference" class="about-me__img">
+                </div>
+                <div class="about-me__right">
+                    <img src="img/pic_gallery/art_pres.jpg" alt="LUMEN Art Event" class="about-me__img">
+                    <p>Outside of this, I've showcased in Art Galleries and Markets selling custom and printed paintings, raising money for local queer and trans libraries.</p>
+                </div>
+            </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+            <script>
+            VANTA.NET({
+                el: "#about-vanta-bg",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 150.00,
+                minWidth: 200.00,
+                scale: 1.00,
+                scaleMobile: 1.00,
+                color: 0x51081b,
+                backgroundColor: 0x0f091a
+            })
+            </script>
+        </section>
+
 
         <!-- work experience -->
         <section class="work-experience" id="experiences">
@@ -77,25 +110,16 @@
         </section>
 
 
-        <!-- About Me -->
-        <section class ="about-me" id = "about">
-            <h2 class="section__title section__title--about">Bio </h2>
-            <p class = "section__subtitle section__subtitle--about"></p>
-            <div class="about-me__text">
-                <p>As a math nerd I'm exploring AI and cryptography in chip design while iterning at Marvell Technology.</p> 
-                <p>I love Aerospace as a QRET Kit Rocket and Tech Dev member building rockets and helping outreach in QHERC.</p>
-                <p>In the real world, I paint, love punk and drag shows, and play hockey with my local beer league. </p>
-            </div>
-            <img src="img/nerd.JPEG" alt="Garden Painting" class="about-me__img">
-        </section>
-
         <!-- My Works -->
-        <section class = "artwork" id="art">
-            <h2 class="section__title">Artworks</h2>
-            <p class = "section__subtitle">
-            <strong> Including watercolour, acrylic, oil, graphite and other mediums. 
-                Click for more</strong> 
-            </p>
+        <section class = "artwork" id="art" style="position:relative;overflow:hidden;">
+            <div id="artwork-vanta-bg" style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:0;"></div>
+            <div class="artwork-header" style="position:relative;z-index:1;">
+                <h2 class="section__title artwork__title--clr-lt">Art Gallery</h2>
+                <p class = "section__subtitle artwork__subtitle--clr-lt">
+                <strong> Including watercolour, acrylic, oil, graphite and other mediums. 
+                    Click for more</strong> 
+                </p>
+            </div>
 
             <div class = "portfolio">
 
@@ -116,6 +140,24 @@
                 </a>
 
             </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.trunk.min.js"></script> 
+            <script>
+            VANTA.TRUNK({
+                el: "#artwork-vanta-bg",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                scale: 1.00,
+                scaleMobile: 1.00,
+                spacing: 10.00,
+                chaos: 8.50,
+                color: 0x51081b,
+                backgroundColor: 0x0f091a
+            })
+            </script>
         </section>
 
         <!-- Footer-->
