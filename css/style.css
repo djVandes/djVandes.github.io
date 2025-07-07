@@ -540,13 +540,11 @@ header {
 }
 
 
-
-
 /************/
 /* ARTWORKS */
 /************/
 .artwork {
-    background-color: var(--clr-lt);
+    background: url('../img/art_back.png') center center/cover no-repeat;
     color: var(--clr-drk);
     text-align: center;
     align-items: center; /* Center the experiences horizontally */
