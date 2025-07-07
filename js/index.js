@@ -13,8 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-
-
 document.addEventListener('click', function (e) {
     const nav = document.querySelector('.nav');
     const navToggle = document.querySelector('.nav-toggle');
