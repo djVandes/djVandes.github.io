@@ -469,7 +469,6 @@ header {
     border-radius: 10px; /* Rounded corners */
     padding: 20px; /* Padding inside the box */
     box-shadow: var(--bs); /* Box shadow for depth */
-
     align-items: center;
     justify-content: center; /* Center the content within each experience item */
 
@@ -482,8 +481,9 @@ header {
 }
 
 .experience:hover {
+    text-decoration: none;
+
     transform: scale(1.05); /* Slightly enlarge on hover */
-    text-decoration: underline;
 }
 
 .experience__logo {
@@ -692,7 +692,7 @@ header {
 }
 .section__title--patch {
     grid-area: title;
-    padding-left: 1em; /* Add padding to the left of the body paragraph */
+    padding-left: 1em; 
 
 }
 
@@ -739,11 +739,11 @@ header {
 .launch__vid {
     grid-area: img;
     max-height: 600px;
-    padding-top: 2em; /* Add padding to the left of the body paragraph */
+    padding-top: 2em; 
 
-    padding-left: 2.5em; /* Add padding to the left of the body paragraph */
+    padding-left: 2.5em; 
 
-    padding-right: 2.5em; /* Add padding to the left of the body paragraph */
+    padding-right: 2.5em; 
     z-index: 2;
     flex-wrap: wrap; /* Allow items to wrap within the container */
     align-items: center; /* Center the experiences horizontally */
