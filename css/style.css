@@ -17,7 +17,7 @@ html {
     --fw-bold: 900;
 
     /*COLOURS*/
-    --clr-navy: #0f091a;
+    --clr-navy: #07040c;
     --clr-drk: #26000a;             /* Muted dark brown */
     --clr-accent: #51081b;          /* Muted deep red */
     --clr-accent-light: #950e32;    /* Muted lighter red */
@@ -312,8 +312,8 @@ header {
 
 .prints-grid {
     display: grid;
-    grid-gap: 1.5em;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid layout */
+    grid-gap: 3em;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Responsive grid layout */
     margin: 1em auto;
     max-width: calc(100% - 20px); /* Adjust max-width to account for padding */
     max-height: calc(100% - 20px); /* Adjust max-height to account for padding */
@@ -328,7 +328,7 @@ header {
 
 }
 .print__img-container:hover {
-    transform: scale(1.5);
+    transform: scale(1.15);
 }
 
 /* Style for the print image */
@@ -630,6 +630,7 @@ header {
 .subpage__img:hover {
     transform: scale(1.25);
     opacity: 1;
+    cursor: pointer;
     border-radius: 0;
     z-index: 3;
 }
